@@ -1,0 +1,30 @@
+@media (max-width: 768px)
+	.container
+		width: 90%
+	.header
+		padding: 30px 0
+		&--fixed
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			z-index: 10
+			background-color: $light
+		&__menu
+			display: none
+			&-nav
+				flex-direction: column
+				align-items: flex-end
+		&__burger-menu
+			display: block
+			position: fixed
+			top: 88px
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: $light
+	.burger-menu
+		&__button
+			display: flex
+	.main
+		padding: 36px 0
