@@ -440,9 +440,8 @@ template {
 }
 
 .burger-menu__button {
-  padding: 3px;
   width: 24px;
-  height: 24px;
+  height: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -476,7 +475,7 @@ template {
 }
 
 .main-title {
-  max-width: 445px;
+  width: 445px;
   margin-bottom: 28px;
   font-family: Roboto Condensed;
   font-weight: bold;
@@ -589,6 +588,9 @@ template {
 
 /* max-width: 768px */
 @media (max-width: 768px) {
+  body {
+    padding-top: 88px;
+  }
   .container {
     width: 90%;
   }
@@ -603,14 +605,24 @@ template {
     z-index: 10;
     background-color: #ffffff;
   }
-  .header__menu {
+  .header__menu--hidden {
     display: none;
+  }
+  .header__menu--burger {
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: end;
   }
   .header__menu-nav {
     flex-direction: column;
-    align-items: flex-end;
+    text-align: right;
+    margin-right: 0;
+    margin-bottom: 40px;
   }
-  .header__burger-menu {
+  .header__menu-item {
+    margin-bottom: 10px;
+  }
+  .header__burger-menu--visible {
     display: block;
     position: fixed;
     top: 88px;
@@ -632,6 +644,85 @@ template {
   .container {
     width: 90%;
   }
+  .main {
+    text-align: center;
+  }
+  .main__info {
+    margin-bottom: 40px;
+  }
+  .main-title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 23px;
+  }
+  .main-name {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 33px;
+  }
+  .main-description {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 18px;
+  }
+  .main__button-buy, .main__button-read {
+    height: 40px;
+    width: 176px;
+    padding: 9px 20px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .main__button-read {
+    padding: 7px 20px;
+  }
+  .main__book-image {
+    width: 250px;
+    height: 374px;
+  }
 }
 
-/* max-width: 460px */
+/* max-width: 425px */
+@media (max-width: 425px) {
+  body {
+    padding-top: 64px;
+  }
+  .header {
+    padding: 18px 0;
+  }
+  .header__burger-menu {
+    top: 64px;
+  }
+  .header__menu--burger {
+    align-items: center;
+  }
+  .header__menu-nav {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .main {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .main__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+  .main__button-buy {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .main__book {
+    height: 332px;
+  }
+  .main__book-image {
+    width: 143px;
+    height: 214px;
+  }
+  .burger-menu__button {
+    margin-right: 8px;
+  }
+}
