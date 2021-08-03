@@ -536,7 +536,7 @@ template {
   align-items: center;
   width: 488px;
   height: 580px;
-  background-color: rgba(149, 158, 173, 0.1);
+  background-color: rgba(179, 186, 197, 0.1);
 }
 
 .main__book-image {
@@ -552,18 +552,49 @@ template {
   display: flex;
 }
 
-.recommend {
-  max-width: 751px;
-}
-
-.recommend__title {
-  margin-bottom: 30px;
+.books__title {
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0.2px;
+}
+
+.books__price {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #1565d8;
+}
+
+.button-buy {
+  width: 101px;
+  padding: 7px 20px;
+  background: #183b56;
+  border-radius: 2000px;
+  color: #ffffff;
+}
+
+.cards-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+}
+
+.recommend {
+  margin-right: 29px;
+  max-width: 751px;
+}
+
+.recommend__title {
+  margin-bottom: 30px;
 }
 
 .recommend__wrapper {
@@ -592,28 +623,12 @@ template {
 .recommend__info-title {
   padding: 13px 0;
   margin-bottom: 3px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 32px;
-  letter-spacing: 0.2px;
 }
 
 .recommend__info-genre {
   margin-bottom: 24px;
   font-size: 16px;
   line-height: 22px;
-}
-
-.recommend__info-price {
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  color: #1565d8;
 }
 
 .recommend__info-bottom {
@@ -624,13 +639,6 @@ template {
 
 .recommend__info-button {
   margin-right: 22px;
-  padding: 7px 20px;
-  background: #183b56;
-  border-radius: 2000px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
 }
 
 .recommend__info-heart {
@@ -639,6 +647,49 @@ template {
   height: 21px;
   background: url(/img/heart.svg) no-repeat center center;
   background-size: contain;
+}
+
+.top {
+  width: 360px;
+}
+
+.top__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 0 24px;
+  background-color: rgba(179, 186, 197, 0.1);
+  border-radius: 8px;
+}
+
+.top__title {
+  margin-bottom: 30px;
+}
+
+.top__card {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.top-image {
+  width: 120px;
+  height: 178px;
+  margin-right: 17px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.top__info {
+  padding: 9px 0px 9px 9px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top__info-title {
+  margin-bottom: 15px;
+}
+
+.top__info-price {
+  margin-bottom: 22px;
 }
 
 /* max-width: 1200px */
