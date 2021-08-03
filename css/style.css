@@ -21,11 +21,6 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  transition: color 0.15s ease;
-}
-
-a:hover {
-  color: #faad13;
 }
 
 .container {
@@ -491,7 +486,7 @@ template {
 }
 
 .main-title--gold {
-  color: #FAAD13;
+  color: #faad13;
 }
 
 .main-name {
@@ -556,6 +551,30 @@ template {
   }
   .main-description {
     width: 500px;
+  }
+}
+
+@media (min-width: 993px) {
+  .button {
+    transition: .2s linear;
+  }
+  .button--blue:hover {
+    background-image: linear-gradient(to right, #EC1F46 0%, #faad13 51%, #EC1F46 100%);
+    background-size: 200% auto;
+    background-position: right center;
+  }
+  .button--white:hover {
+    background-image: linear-gradient(to right, #EC1F46 0%, #faad13 51%, #EC1F46 100%);
+    background-size: 200% auto;
+    background-position: right center;
+    border-color: transparent;
+    color: #ffffff;
+  }
+  a {
+    transition: color 0.15s ease;
+  }
+  a:hover {
+    color: #faad13;
   }
 }
 

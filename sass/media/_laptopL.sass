@@ -5,3 +5,23 @@
 	.main
 		&-description
 			width: 500px
+@media (min-width: 993px)
+	.button
+		transition: .2s linear
+		&--blue
+			&:hover
+				background-image: linear-gradient(to right, #EC1F46 0%, $gold 51%, #EC1F46 100%)
+				background-size: 200% auto
+				background-position: right center
+		&--white
+			&:hover
+				background-image: linear-gradient(to right, #EC1F46 0%, $gold 51%, #EC1F46 100%)
+				background-size: 200% auto
+				background-position: right center
+				border-color: transparent
+				color: $light
+
+	a
+		transition: color 0.15s ease
+		&:hover
+			color: $gold
