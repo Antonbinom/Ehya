@@ -7,13 +7,16 @@
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
+		margin-bottom: 27px
 		border-radius: $border
 	&__card
 		display: flex
-		flex-basis: 48%
 		margin-bottom: 32px
+		flex-basis: 48%
 		padding: 10px
 		border: 1px solid $edge
+		&:nth-child(5), &:nth-child(6)
+			margin-bottom: 0
 	&-image
 		width: 160px
 		height: 238px
@@ -42,3 +45,19 @@
 			background-size: contain
 			&:active
 				// background-color: $gray2
+	&-link
+		display: flex
+		justify-content: center
+		max-width: 100%
+		padding: 26px
+		align-items: center
+		font-family: Roboto Condensed
+		font-style: normal
+		font-weight: bold
+		font-size: 16px
+		line-height: 20px
+		text-align: center
+		text-transform: uppercase
+		color: $blue
+		background-color: rgba($blue, 0.1)
+		border-radius: $border

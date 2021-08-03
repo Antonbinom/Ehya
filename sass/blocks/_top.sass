@@ -3,17 +3,20 @@
 	&__wrapper
 		display: flex
 		flex-direction: column
-		padding: 24px 24px 0 24px
+		padding: 24px 24px 26px 24px
 		background-color: rgba($gray3, 0.1)
 		border-radius: $border
+		border-bottom:
 	&__title
 		margin-bottom: 30px
 	&__card
 		display: flex
-		margin-bottom: 36px
+		margin-bottom: 35px
+		&:nth-child(4)
+			margin-bottom: 24px
 	&-image
 		width: 120px
-		height: 178px
+		height: 177.5px
 		margin-right: 17px
 		object-fit: cover
 		border-radius: $border
@@ -25,3 +28,17 @@
 			margin-bottom: 15px
 		&-price
 			margin-bottom: 22px
+	&-line
+		margin: 0
+		width: 312px
+		margin-bottom: 25px
+		border: 1px solid $edge
+	&-link
+		font-family: Roboto Condensed
+		font-style: normal
+		font-weight: bold
+		font-size: 16px
+		line-height: 20px
+		text-align: center
+		text-transform: uppercase
+		color: $blue
