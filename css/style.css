@@ -544,6 +544,103 @@ template {
   height: 374px;
 }
 
+.books {
+  padding: 50px 0 76px;
+}
+
+.books__wrapper {
+  display: flex;
+}
+
+.recommend {
+  max-width: 751px;
+}
+
+.recommend__title {
+  margin-bottom: 30px;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+}
+
+.recommend__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.recommend__card {
+  display: flex;
+  flex-basis: 48%;
+  margin-bottom: 32px;
+  padding: 10px;
+  border: 1px solid #eceef2;
+}
+
+.recommend-image {
+  width: 160px;
+  height: 238px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recommend__info-title {
+  padding: 13px 0;
+  margin-bottom: 3px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+}
+
+.recommend__info-genre {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.recommend__info-price {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #1565d8;
+}
+
+.recommend__info-bottom {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.recommend__info-button {
+  margin-right: 22px;
+  padding: 7px 20px;
+  background: #183b56;
+  border-radius: 2000px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.recommend__info-heart {
+  margin-top: 6px;
+  width: 18px;
+  height: 21px;
+  background: url(/img/heart.svg) no-repeat center center;
+  background-size: contain;
+}
+
 /* max-width: 1200px */
 @media (max-width: 1200px) {
   .container {
