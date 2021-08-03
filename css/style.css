@@ -440,7 +440,7 @@ template {
   display: none;
 }
 
-.burger-menu__button {
+.burger-button {
   width: 24px;
   height: 18px;
   display: flex;
@@ -453,7 +453,7 @@ template {
   cursor: pointer;
 }
 
-.burger-menu__line {
+.burger-line {
   width: 22px;
   height: 2px;
   background: #3A4C66;
@@ -485,7 +485,7 @@ template {
   letter-spacing: 0.2px;
 }
 
-.main-title--gold {
+.main-title-gold {
   color: #faad13;
 }
 
@@ -519,7 +519,7 @@ template {
 }
 
 .main__button-read {
-  padding: 15px 50px 14px 51px;
+  padding: 14px 50px 15px 51px;
   color: #1565d8;
   font-style: normal;
   font-weight: bold;
@@ -656,7 +656,7 @@ template {
     bottom: 0;
     background-color: #ffffff;
   }
-  .burger-menu__button {
+  .burger-button {
     display: flex;
   }
   .main {
@@ -747,7 +747,7 @@ template {
     width: 143px;
     height: 214px;
   }
-  .burger-menu__button {
+  .burger-button {
     margin-right: 8px;
   }
 }
