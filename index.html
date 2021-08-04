@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png" />
@@ -111,7 +112,7 @@
                   <span class="recommend__info-price books__price">$25.00</span>
                   <div class="recommend__info-bottom">
                     <button class="recommend__info-button button button-buy">Купить</button
-                    ><button class="recommend__info-heart button"></button>
+                    ><button id="heartButton" class="recommend__info-heart button button-unlike"></button>
                   </div>
                 </div>
               </div>
@@ -124,7 +125,7 @@
                   <span class="recommend__info-price books__price">$28.00</span>
                   <div class="recommend__info-bottom">
                     <button class="recommend__info-button button button-buy">Купить</button
-                    ><button class="recommend__info-heart button"></button>
+                    ><button id="heartButton" class="recommend__info-heart button button-unlike"></button>
                   </div>
                 </div>
               </div>
@@ -137,7 +138,7 @@
                   <span class="recommend__info-price books__price">$19.50</span>
                   <div class="recommend__info-bottom">
                     <button class="recommend__info-button button button-buy">Купить</button
-                    ><button class="recommend__info-heart button"></button>
+                    ><button id="heartButton" class="recommend__info-heart button button-unlike"></button>
                   </div>
                 </div>
               </div>
@@ -150,7 +151,7 @@
                   <span class="recommend__info-price books__price">$20.00</span>
                   <div class="recommend__info-bottom">
                     <button class="recommend__info-button button button-buy">Купить</button
-                    ><button class="recommend__info-heart button"></button>
+                    ><button id="heartButton" class="recommend__info-heart button button-unlike"></button>
                   </div>
                 </div>
               </div>
@@ -163,7 +164,7 @@
                   <span class="recommend__info-price books__price">$23.00</span>
                   <div class="recommend__info-bottom">
                     <button class="recommend__info-button button button-buy">Купить</button
-                    ><button class="recommend__info-heart button"></button>
+                    ><button id="heartButton" class="recommend__info-heart button button-unlike"></button>
                   </div>
                 </div>
               </div>
@@ -176,7 +177,7 @@
                   <span class="recommend__info-price books__price">$23.00</span>
                   <div class="recommend__info-bottom">
                     <button class="recommend__info-button button button-buy">Купить</button
-                    ><button class="recommend__info-heart button"></button>
+                    ><button id="heartButton" class="recommend__info-heart button button-unlike"></button>
                   </div>
                 </div>
               </div>
@@ -239,7 +240,67 @@
       </div>
       <!-- /.container -->
     </section>
+    <section class="sections">
+      <div class="container">
+        <div class="sections__wrapper">
+          <div class="swiper-container sections__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide sections__slider-item">
+                <img src="img/sections-1.svg" alt="Slider" class="sections-image" />
+                <h4 class="sections__title">Бизнес & Финансы</h4>
+                <span class="sections__description">Книги про мир бизнеса</span>
+              </div>
+              <div class="swiper-slide sections__slider-item">
+                <img src="img/sections-2.svg" alt="Slider" class="sections-image" />
+                <h4 class="sections__title">Самомотиватия</h4>
+                <span class="sections__description">Книги о мотивации</span>
+              </div>
+              <div class="swiper-slide sections__slider-item">
+                <img src="img/sections-3.svg" alt="Slider" class="sections-image" />
+                <h4 class="sections__title">Романы Теленовеллы</h4>
+                <span class="sections__description">Книги с крутыми историями</span>
+              </div>
+              <div class="swiper-slide sections__slider-item">
+                <img src="img/sections-4.svg" alt="Slider" class="sections-image" />
+                <h4 class="sections__title">Навыки будущего</h4>
+                <span class="sections__description">Книги для самоподготовки </span>
+              </div>
+              <div class="swiper-slide sections__slider-item">
+                <img src="img/sections-1.svg" alt="Slider" class="sections-image" />
+                <h4 class="sections__title">Бизнес & Финансы</h4>
+                <span class="sections__description">Книги про мир бизнеса</span>
+              </div>
+              <div class="swiper-slide sections__slider-item">
+                <img src="img/sections-2.svg" alt="Slider" class="sections-image" />
+                <h4 class="sections__title">Самомотиватия</h4>
+                <span class="sections__description">Книги о мотивации</span>
+              </div>
+              <div class="swiper-slide sections__slider-item">
+                <img src="img/sections-3.svg" alt="Slider" class="sections-image" />
+                <h4 class="sections__title">Романы Теленовеллы</h4>
+                <span class="sections__description">Книги с крутыми историями</span>
+              </div>
+              <div class="swiper-slide sections__slider-item">
+                <img src="img/sections-4.svg" alt="Slider" class="sections-image" />
+                <h4 class="sections__title">Навыки будущего</h4>
+                <span class="sections__description">Книги для самоподготовки </span>
+              </div>
+            </div>
+          </div>
+          <button class="sections__slider-button sections__slider-button--prev">
+            <img src="img/sections-prev.svg" alt="Image: Arrow" class="button-image" />
+          </button>
+          <button class="sections__slider-button sections__slider-button--next">
+            <img src="img/sections-next.svg" alt="Image: Arrow" class="button-image" />
+          </button>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.sections -->
     <!-- /.books -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
