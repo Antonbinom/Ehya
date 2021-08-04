@@ -591,7 +591,7 @@ template {
 
 .recommend {
   margin-right: 31px;
-  max-width: 751px;
+  width: 751px;
 }
 
 .recommend__title {
@@ -726,6 +726,7 @@ template {
 }
 
 .top-link {
+  width: 100%;
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
@@ -747,12 +748,23 @@ template {
   .main__card {
     margin-right: 0;
   }
+  .books__wrapper {
+    flex-wrap: wrap;
+  }
+  .recommend {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
   .recommend__card {
+    text-align: center;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    width: 268px;
+    width: 280px;
     padding: 24px;
+  }
+  .recommend__card:nth-child(4) {
+    margin-bottom: 0;
   }
   .recommend-image {
     margin-right: 0;
@@ -765,6 +777,30 @@ template {
   }
   .recommend__info-bottom {
     margin-top: 18px;
+  }
+  .top {
+    width: 100%;
+  }
+  .top__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .top__card {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .top-image {
+    margin-right: 0;
+  }
+  .top__info {
+    align-items: center;
+  }
+  .top-line {
+    width: 100%;
+  }
+  .top-link {
+    align-self: center;
   }
 }
 
