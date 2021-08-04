@@ -747,11 +747,24 @@ template {
   .main__card {
     margin-right: 0;
   }
-  .books__wrapper {
-    flex-wrap: wrap;
+  .recommend__card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 268px;
+    padding: 24px;
   }
-  .recommend {
-    margin-bottom: 60px;
+  .recommend-image {
+    margin-right: 0;
+  }
+  .recommend__info-title {
+    margin-bottom: 0;
+  }
+  .recommend__info-genre {
+    margin-bottom: 20px;
+  }
+  .recommend__info-bottom {
+    margin-top: 18px;
   }
 }
 
