@@ -1,18 +1,19 @@
 .recommend
-	margin-right: 29px
+	margin-right: 31px
 	max-width: 751px
 	&__title
 		margin-bottom: 30px
 	&__wrapper
 		display: flex
-		flex-wrap: wrap
 		justify-content: space-between
+		flex-wrap: wrap
 		margin-bottom: 27px
 		border-radius: $border
 	&__card
+		margin-right: 1px
+		width: 358px
 		display: flex
 		margin-bottom: 32px
-		flex-basis: 48%
 		padding: 10px
 		border: 1px solid $edge
 		&:nth-child(5), &:nth-child(6)
@@ -43,8 +44,6 @@
 			height: 21px
 			background: url(/img/heart.svg) no-repeat center center
 			background-size: contain
-			&:active
-				// background-color: $gray2
 	&-link
 		display: flex
 		justify-content: center

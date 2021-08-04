@@ -590,7 +590,7 @@ template {
 }
 
 .recommend {
-  margin-right: 29px;
+  margin-right: 31px;
   max-width: 751px;
 }
 
@@ -600,16 +600,17 @@ template {
 
 .recommend__wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 27px;
   border-radius: 8px;
 }
 
 .recommend__card {
+  margin-right: 1px;
+  width: 358px;
   display: flex;
   margin-bottom: 32px;
-  flex-basis: 48%;
   padding: 10px;
   border: 1px solid #eceef2;
 }
@@ -673,14 +674,11 @@ template {
   border-radius: 8px;
 }
 
-.top {
-  width: 360px;
-}
-
 .top__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 24px 24px 26px 24px;
+  flex-wrap: wrap;
+  padding: 24px 22px 26px 24px;
   background-color: rgba(179, 186, 197, 0.1);
   border-radius: 8px;
 }
@@ -745,6 +743,9 @@ template {
   }
   .main-description {
     width: 500px;
+  }
+  .main__card {
+    margin-right: 0;
   }
 }
 
