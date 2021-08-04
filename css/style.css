@@ -550,7 +550,6 @@ template {
 
 .books__wrapper {
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 27px;
 }
 
@@ -747,6 +746,12 @@ template {
   }
   .main__card {
     margin-right: 0;
+  }
+  .books__wrapper {
+    flex-wrap: wrap;
+  }
+  .recommend {
+    margin-bottom: 60px;
   }
 }
 
