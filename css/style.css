@@ -747,6 +747,12 @@ template {
   .main__card {
     margin-right: 0;
   }
+  .books__wrapper {
+    flex-wrap: wrap;
+  }
+  .recommend {
+    margin-bottom: 60px;
+  }
 }
 
 @media (min-width: 993px) {
