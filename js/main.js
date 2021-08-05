@@ -65,28 +65,36 @@ $(document).ready(function(){
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 10,
-      centeredSlides: true,
+      spaceBetween: 0,
       // centeredSlides: true,
     },
     460: {
+      spaceBetween: 0,
       slidesPerView: 1,
-      spaceBetween: 26,
+    },
+    567: {
+      slidesPerView: 2,
+      spaceBetween: 30,
     },
     // when window width is >= 768px
-    576: {
+    640: {
       slidesPerView: 2,
-      spaceBetween: 28,
+      spaceBetween: 50,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 50,
     },
     993: {
       slidesPerView: 3,
-      spaceBetween: 41,
+      spaceBetween: 48,
     },
     1200: {
       slidesPerView: 4,
       spaceBetween: 36,
     },
   },
+  height: 298,
   loop: false,
   watchOverflow: true,
   // autoHaight: true,
