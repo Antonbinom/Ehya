@@ -10,16 +10,11 @@ $(document).ready(function(){
 		console.log('click');
   });
 
-  $("#heartButton").click(function() {
-  $(this).toggleClass("button-like");
-  $(this).toggleClass("button-unlike");
-  console.log('click');
-});
-
 //   // ---------- Hotel Slider -----------
 
   const sectionsSlider = new Swiper('.sections__slider', {
-    slidesPerView: 4,
+  // Optional parameters
+  slidesPerView: 4,
   spaceBetween: 26,
   pagination: {
     el: ".swiper-pagination",
@@ -43,7 +38,6 @@ $(document).ready(function(){
   //     spaceBetween: 40
   //   }
   // };
-  // Optional parameters
   loop: false,
   watchOverflow: true,
   // Navigation arrows
@@ -51,10 +45,6 @@ $(document).ready(function(){
     nextEl: '.sections__slider-button--next',
     prevEl: '.sections__slider-button--prev',
   },
-
-	// speed: 700,
-	// autoplay: {delay: 5000},
-
 	// Переключение слайдера клавиатурой
 	keyboard: {
     enabled: true,

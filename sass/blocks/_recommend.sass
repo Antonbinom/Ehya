@@ -39,6 +39,10 @@
 			align-items: center
 		&-button
 			margin-right: 22px
+		&-heart
+			position: relative
+			width: 18px
+			height: 21px
 	&-link
 		display: flex
 		justify-content: center
@@ -56,15 +60,12 @@
 		background-color: rgba($blue, 0.1)
 		border-radius: $border
 	.button
-		&-unlike
-			margin-top: 6px
-			width: 18px
-			height: 21px
-			background: url(/img/heart.svg) no-repeat center center
-			background-size: contain
 		&-like
-			margin-top: 6px
+			position: absolute
+			top: 2px
+			left: 0
 			width: 18px
 			height: 21px
-			background: url(/img/heart-active.svg) no-repeat center center
-			background-size: contain
+			fill: $gray2
+			&:active
+				fill: $gold

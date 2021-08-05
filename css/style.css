@@ -575,7 +575,7 @@ template {
 
 .button-buy {
   width: 101px;
-  padding: 7px 20px;
+  padding: 6px 20px 8px;
   background: #183b56;
   border-radius: 2000px;
   color: #ffffff;
@@ -650,6 +650,12 @@ template {
   margin-right: 22px;
 }
 
+.recommend__info-heart {
+  position: relative;
+  width: 18px;
+  height: 21px;
+}
+
 .recommend-link {
   display: flex;
   justify-content: center;
@@ -668,20 +674,17 @@ template {
   border-radius: 8px;
 }
 
-.recommend .button-unlike {
-  margin-top: 6px;
+.recommend .button-like {
+  position: absolute;
+  top: 2px;
+  left: 0;
   width: 18px;
   height: 21px;
-  background: url(/img/heart.svg) no-repeat center center;
-  background-size: contain;
+  fill: #959ead;
 }
 
-.recommend .button-like {
-  margin-top: 6px;
-  width: 18px;
-  height: 21px;
-  background: url(/img/heart-active.svg) no-repeat center center;
-  background-size: contain;
+.recommend .button-like:active {
+  fill: #faad13;
 }
 
 .top__wrapper {
@@ -1161,6 +1164,9 @@ template {
     font-size: 28px;
     line-height: 36px;
   }
+  .books__wrapper {
+    padding-bottom: 56px;
+  }
   .recommend {
     text-align: center;
     margin-bottom: 57px;
@@ -1225,11 +1231,17 @@ template {
   .top__wrapper {
     flex-direction: column;
     justify-content: start;
-    padding: 26px 14px 26px 14px;
+    padding: 26px 14px 21px 14px;
   }
   .top__card {
     flex-direction: row;
     margin-bottom: 24px;
+  }
+  .top__card:nth-child(2) {
+    margin-bottom: 22px;
+  }
+  .top__card:nth-child(4) {
+    margin-bottom: 25px;
   }
   .top-image {
     width: 95px;
