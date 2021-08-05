@@ -780,9 +780,11 @@ template {
 
 .sections__slider-button--prev {
   left: -30px;
+  background-image: url(/img/sections-prev.svg);
 }
 
 .sections__slider-button--next {
+  background-image: url(/img/sections-next.svg);
   right: -26px;
 }
 
@@ -801,8 +803,8 @@ template {
 .sections__slider-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 .sections-image {
@@ -1087,7 +1089,7 @@ template {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 1000;
     background-color: #ffffff;
   }
   .header__menu {
@@ -1116,6 +1118,7 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1000;
     background-color: #ffffff;
   }
   .burger-button {
@@ -1349,5 +1352,46 @@ template {
   }
   .top-link {
     align-self: start;
+  }
+  .sections {
+    padding: 55px 0 140px;
+  }
+  .sections__slider-item {
+    padding: 20px 14px;
+    width: 140px;
+    height: 182px;
+  }
+  .sections__slider-button {
+    width: 48px;
+    height: 48px;
+    left: 0;
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+  }
+  .sections__slider-button--prev {
+    background-image: url(/img/sections-prev-small.svg);
+    top: 406px;
+    left: 48%;
+    transform: translateX(-100%);
+  }
+  .sections__slider-button--next {
+    background-image: url(/img/sections-next-small.svg);
+    top: 430px;
+    left: 52%;
+  }
+  .sections-image {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 16px;
+  }
+  .sections__title {
+    height: 40px;
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .sections__description {
+    font-size: 12px;
+    line-height: 20px;
   }
 }
