@@ -1,0 +1,52 @@
+.unreleased
+	padding: 62px 0 80px
+	background-color: $primary
+	&__wrapper
+		position: relative
+	&__title
+		margin-bottom: 60px
+		font-family: Roboto Condensed
+		font-style: normal
+		font-weight: bold
+		font-size: 36px
+		line-height: 48px
+		letter-spacing: 0.2px
+		color: $light
+	&__slider
+		height: 298px
+		margin: 0
+		padding: 0
+		&-item
+			width: 204px
+			height: auto
+			border-radius: $border
+			overflow: hidden
+		&-button
+			margin-top: -5px
+			width: 54px
+			height: 56px
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			z-index: 99
+			top: 0
+			right: 0
+			background-image: url(/img/arrow-active.svg)
+			background-position: center
+			background-repeat: no-repeat
+			background-color: transparent
+			border-radius: 50%
+			border: 2px solid $light
+			cursor: pointer
+			&--prev
+				transform: rotate(180deg)
+				right: 78px
+			&--next
+	&-image
+		object-fit: cover
+.swiper
+	&-button
+		&-disabled
+			border-color: $gray
+			background-image: url(/img/arrow-unactive.svg)

@@ -52,6 +52,15 @@
 			width: 100%
 		&-link
 			align-self: center
+	.sections
+		&__slider
+			&-item
+				padding: 30px 6px
+		&-image
+			margin-bottom: 30px
+		&__title
+			font-size: 18px
+			line-height: 1.6
 @media (min-width: 993px)
 	.button
 		transition: .2s linear
@@ -71,10 +80,6 @@
 			&:hover
 				background-color: $gold
 				color: $light
-		&-heart
-			&:hover
-				fill: green
-				stroke: white
 	a
 		transition: color 0.15s ease
 		&:hover

@@ -40,10 +40,33 @@ $(document).ready(function(){
   // };
   loop: false,
   watchOverflow: true,
+  autoHaight: true,
   // Navigation arrows
   navigation: {
     nextEl: '.sections__slider-button--next',
     prevEl: '.sections__slider-button--prev',
+  },
+	// Переключение слайдера клавиатурой
+	keyboard: {
+    enabled: true,
+		onlyInViewport: false,
+  },
+});
+  const unreleasedSlider = new Swiper('.unreleased__slider', {
+  // Optional parameters
+  slidesPerView: 5,
+  spaceBetween: 31,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  loop: false,
+  watchOverflow: true,
+  autoHaight: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.unreleased__slider-button--next',
+    prevEl: '.unreleased__slider-button--prev',
   },
 	// Переключение слайдера клавиатурой
 	keyboard: {

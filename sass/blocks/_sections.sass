@@ -3,7 +3,6 @@
 	&__wrapper
 		position: relative
 	&__slider
-		height: 240px
 		&-button
 			width: 56px
 			height: 56px
@@ -12,7 +11,8 @@
 			justify-content: center
 			position: absolute
 			z-index: 99
-			top: 90px
+			top: 50%
+			transform: translateY(-50%)
 			border-radius: 50%
 			background-color: $light
 			background-position: center
@@ -25,17 +25,25 @@
 			&--next
 				right: -26px
 		&-item
+			display: flex
+			flex-direction: column
+			align-items: center
 			width: 265px
-			height: 240px
+			height: auto
 			padding: 40px 0 30px
 			border: 1px solid $edge
 			border-radius: $border
 			text-align: center
+		&-info
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
 	&-image
 		width: 64px
 		height: 64px
 		overflow: cover
-		margin-bottom: 36px
+		margin-bottom: 38px
 	&__title
 		margin-bottom: 12px
 		font-family: Roboto

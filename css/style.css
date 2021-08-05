@@ -759,10 +759,6 @@ template {
   position: relative;
 }
 
-.sections__slider {
-  height: 240px;
-}
-
 .sections__slider-button {
   width: 56px;
   height: 56px;
@@ -771,7 +767,8 @@ template {
   justify-content: center;
   position: absolute;
   z-index: 99;
-  top: 90px;
+  top: 50%;
+  transform: translateY(-50%);
   border-radius: 50%;
   background-color: #ffffff;
   background-position: center;
@@ -790,19 +787,29 @@ template {
 }
 
 .sections__slider-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 265px;
-  height: 240px;
+  height: auto;
   padding: 40px 0 30px;
   border: 1px solid #eceef2;
   border-radius: 8px;
   text-align: center;
 }
 
+.sections__slider-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sections-image {
   width: 64px;
   height: 64px;
   overflow: cover;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 }
 
 .sections__title {
@@ -823,6 +830,73 @@ template {
 
 .swiper-button-disabled {
   display: none;
+}
+
+.unreleased {
+  padding: 62px 0 80px;
+  background-color: #183b56;
+}
+
+.unreleased__wrapper {
+  position: relative;
+}
+
+.unreleased__title {
+  margin-bottom: 60px;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.unreleased__slider {
+  height: 298px;
+  margin: 0;
+  padding: 0;
+}
+
+.unreleased__slider-item {
+  width: 204px;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.unreleased__slider-button {
+  margin-top: -5px;
+  width: 54px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  background-image: url(/img/arrow-active.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.unreleased__slider-button--prev {
+  transform: rotate(180deg);
+  right: 78px;
+}
+
+.unreleased-image {
+  object-fit: cover;
+}
+
+.swiper-button-disabled {
+  border-color: #5a7184;
+  background-image: url(/img/arrow-unactive.svg);
 }
 
 /* max-width: 1200px */
@@ -893,6 +967,16 @@ template {
   .top-link {
     align-self: center;
   }
+  .sections__slider-item {
+    padding: 30px 6px;
+  }
+  .sections-image {
+    margin-bottom: 30px;
+  }
+  .sections__title {
+    font-size: 18px;
+    line-height: 1.6;
+  }
 }
 
 @media (min-width: 993px) {
@@ -914,10 +998,6 @@ template {
   .button-buy:hover {
     background-color: #faad13;
     color: #ffffff;
-  }
-  .button-heart:hover {
-    fill: green;
-    stroke: white;
   }
   a {
     transition: color 0.15s ease;
