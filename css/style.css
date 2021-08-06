@@ -1418,13 +1418,13 @@ template {
     box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
   }
   .sections__slider-button--prev {
-    background-image: url(/img/sections-prev-small.svg);
+    background-image: url(../img/sections-prev-small.svg);
     top: 406px;
     left: 48%;
     transform: translateX(-100%);
   }
   .sections__slider-button--next {
-    background-image: url(/img/sections-next-small.svg);
+    background-image: url(../img/sections-next-small.svg);
     top: 430px;
     left: 52%;
   }
