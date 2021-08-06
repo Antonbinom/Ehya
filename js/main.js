@@ -67,6 +67,10 @@ $(document).ready(function(){
       slidesPerView: 1,
       spaceBetween: 30,
     },
+    460: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
     490: {
       slidesPerView: 2,
       spaceBetween: 30,

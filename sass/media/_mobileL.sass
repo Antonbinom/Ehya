@@ -159,9 +159,21 @@
 		&__slider
 			width: 204px
 	.author
-		padding-top: 45px
+		padding: 45px 0 37px
 		&__items
 			grid-template-rows: 210px 1fr
 		&__video
 			&-wrapper
 				height: 138px
+				&--three
+					background-image: url(../img/author-3-s.jpg)
+
+	.publishers
+		&__wrapper
+			width: 232px
+			grid-template-columns: repeat(2, 1fr)
+			grid-column-gap: 10px
+		&__image
+			margin-right: 5px
+			&:nth-child(n+7)
+				display: none
