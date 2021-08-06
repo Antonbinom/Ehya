@@ -112,5 +112,24 @@ $(document).ready(function(){
 		onlyInViewport: false,
   },
 });
-  $('.')
+	// Youtube
+  var player;
+  $('.play').on('click',
+  function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '100%',
+          width: '100%',
+          videoId: 'vDo1jj79ldo',
+          playerVars: {
+            'playsinline': 1
+          },
+          events: {
+            'onReady': videoPlay,
+          }
+        });
+      })
+
+      function videoPlay(event) {
+        event.target.playVideo();
+      }
 });

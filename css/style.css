@@ -926,40 +926,43 @@ template {
 .author__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat 2, 1fr;
+  grid-template-rows: 380px 1fr;
   gap: 30px;
   flex-direction: column;
 }
 
 .author__video {
-  width: 315px;
-  height: 286px;
   grid-column: span 1;
   position: relative;
 }
 
 .author__video-wrapper {
   position: relative;
-  width: 315px;
   height: 200px;
   margin-bottom: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.author__video-wrapper--two {
+  background-image: url(../img/author-2.jpg);
+}
+
+.author__video-wrapper--three {
+  background-image: url(../img/author-3.jpg);
+}
+
+.author__video-wrapper--four {
+  background-image: url(../img/author-4.jpg);
 }
 
 .author__video-main {
+  background-image: url(../img/author-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   grid-column: span 3;
-  width: 1005px;
-  height: 380px;
-}
-
-.author__video-image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.author__video-image--main {
-  width: 100%;
-  height: 100%;
 }
 
 .author__video-icon {
@@ -967,6 +970,7 @@ template {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .author__bottom {
@@ -990,7 +994,6 @@ template {
 }
 
 .author__title {
-  width: 327px;
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
@@ -1026,6 +1029,10 @@ template {
   height: 100%;
   fill: #1565d8;
   stroke-width: 2px;
+}
+
+.button-favorite:active {
+  fill: #faad13;
 }
 
 /* max-width: 1200px */
@@ -1207,6 +1214,43 @@ template {
     align-items: start;
     text-align: left;
   }
+  .author {
+    padding: 50px 0 70px;
+  }
+  .author__title {
+    font-size: 42px;
+    line-height: 1.6;
+  }
+  .author__description {
+    width: 340px;
+    margin-right: 0;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .author__items {
+    gap: 20px;
+  }
+  .author__wrapper {
+    width: 100%;
+  }
+  .author__video {
+    width: auto;
+  }
+  .author__video-main {
+    width: auto;
+  }
+  .author__video-wrapper {
+    margin-bottom: 18px;
+  }
+  .author__name {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+  }
+  .author__about {
+    font-size: 14px;
+    line-height: 1.6;
+  }
 }
 
 /* max-width: 768px */
@@ -1291,13 +1335,40 @@ template {
     margin: 0 auto;
     width: 480px;
   }
+  .author__head {
+    margin-top: 0;
+    margin-bottom: 35px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .author__title {
+    font-size: 36px;
+    margin-bottom: 23px;
+  }
+  .author__description {
+    width: 460px;
+    text-align: center;
+    height: auto;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .author__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 360px 286px;
+  }
+  .author__video-main {
+    grid-column: span 2;
+  }
+  .author__video:last-child {
+    display: none;
+  }
+  .author-wrap {
+    display: none;
+  }
 }
 
 /* max-width: 576px */
 @media (max-width: 576px) {
-  .container {
-    width: 90%;
-  }
   .main {
     text-align: center;
   }
@@ -1369,6 +1440,62 @@ template {
   }
   .unreleased__slider-button--next {
     left: 53%;
+  }
+  .author__container {
+    width: 94%;
+  }
+  .author__items {
+    grid-template-rows: 310px 1fr;
+  }
+  .author__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .author__description {
+    width: 280px;
+  }
+  .author__bottom {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .author__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+  .author__about {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .author__info {
+    margin-bottom: 16px;
+  }
+  .author__video-wrapper {
+    margin-bottom: 16px;
+  }
+  .author__video-main {
+    background-image: url(../img/author-1-s.jpg);
+  }
+  .author__video-icon {
+    width: 21px;
+    height: 27px;
+  }
+  .author__video-icon--main {
+    width: 56px;
+    height: 56px;
+  }
+  .author__favorite {
+    margin-top: -4px;
+  }
+  .button {
+    width: auto;
+    height: auto;
+  }
+  .button-favorite {
+    width: 14px;
+    height: 13px;
   }
 }
 
@@ -1571,5 +1698,14 @@ template {
   }
   .unreleased__slider {
     width: 204px;
+  }
+  .author {
+    padding-top: 45px;
+  }
+  .author__items {
+    grid-template-rows: 210px 1fr;
+  }
+  .author__video-wrapper {
+    height: 138px;
   }
 }

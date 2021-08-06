@@ -1,6 +1,4 @@
 @media (max-width: 576px)
-	.container
-		width: 90%
 	.main
 		text-align: center
 		&__info
@@ -60,3 +58,46 @@
 					right: 53%
 				&--next
 					left: 53%
+	.author
+		&__container
+			width: 94%
+		&__items
+			grid-template-rows: 310px 1fr
+		&__title
+			font-size: 28px
+			line-height: 36px
+		&__description
+			width: 280px
+		&__bottom
+			align-items: center
+			flex-direction: column
+			text-align: center
+		&__name
+			font-weight: 500
+			font-size: 16px
+			line-height: 20px
+			margin-bottom: 6px
+		&__about
+			font-size: 12px
+			line-height: 20px
+		&__info
+			margin-bottom: 16px
+		&__video
+			&-wrapper
+				margin-bottom: 16px
+			&-main
+				background-image: url(../img/author-1-s.jpg)
+			&-icon
+				width: 21px
+				height: 27px
+				&--main
+					width: 56px
+					height: 56px
+		&__favorite
+			margin-top: -4px
+	.button
+		width: auto
+		height: auto
+		&-favorite
+			width: 14px
+			height: 13px

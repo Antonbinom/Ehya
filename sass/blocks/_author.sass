@@ -10,35 +10,38 @@
 	&__items
 		display: grid
 		grid-template-columns: repeat(3, 1fr)
-		grid-template-rows: repeat (2, 1fr)
+		grid-template-rows: 380px 1fr
 		gap: 30px
 		flex-direction: column
 	&__video
-		width: 315px
-		height: 286px
+		// height: 286px
 		grid-column: span 1
 		position: relative
 		&-wrapper
 			position: relative
-			width: 315px
 			height: 200px
 			margin-bottom: 22px
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+			&--two
+				background-image: url(../img/author-2.jpg)
+			&--three
+				background-image: url(../img/author-3.jpg)
+			&--four
+				background-image: url(../img/author-4.jpg)
 		&-main
+			background-image: url(../img/author-1.jpg)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
 			grid-column: span 3
-			width: 1005px
-			height: 380px
-		&-image
-			height: 100%
-			width: 100%
-			object-fit: cover
-			&--main
-				width: 100%
-				height: 100%
 		&-icon
 			position: absolute
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
+			cursor: pointer
 	&__bottom
 		display: flex
 		justify-content: space-between
@@ -54,7 +57,6 @@
 		font-size: 16px
 		line-height: 22px
 	&__title
-		width: 327px
 		font-family: Roboto Condensed
 		font-style: normal
 		font-weight: bold
@@ -83,3 +85,5 @@
 		height: 100%
 		fill: $blue
 		stroke-width: 2px
+		&:active
+			fill: $gold
