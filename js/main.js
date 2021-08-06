@@ -55,7 +55,7 @@ $(document).ready(function(){
   },
 });
   const unreleasedSlider = new Swiper('.unreleased__slider', {
-  // Optional parameters
+   // Optional parameters
   slidesPerView: 5,
   spaceBetween: 31,
   cssMode: true,
@@ -65,14 +65,13 @@ $(document).ready(function(){
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 0,
-      // centeredSlides: true,
+      spaceBetween: 30,
     },
-    460: {
-      spaceBetween: 0,
-      slidesPerView: 1,
+    490: {
+      slidesPerView: 2,
+      spaceBetween: 30,
     },
-    567: {
+    576: {
       slidesPerView: 2,
       spaceBetween: 30,
     },
@@ -82,16 +81,20 @@ $(document).ready(function(){
       spaceBetween: 50,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 50,
     },
-    993: {
+    992: {
       slidesPerView: 3,
       spaceBetween: 48,
     },
     1200: {
       slidesPerView: 4,
       spaceBetween: 36,
+    },
+    1440: {
+      slidesPerView: 5,
+      spaceBetween: 30,
     },
   },
   height: 298,

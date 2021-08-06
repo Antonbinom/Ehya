@@ -780,11 +780,11 @@ template {
 
 .sections__slider-button--prev {
   left: -30px;
-  background-image: url(/img/sections-prev.svg);
+  background-image: url(../img/sections-prev.svg);
 }
 
 .sections__slider-button--next {
-  background-image: url(/img/sections-next.svg);
+  background-image: url(../img/sections-next.svg);
   right: -26px;
 }
 
@@ -878,7 +878,7 @@ template {
   z-index: 99;
   top: 0;
   right: 0;
-  background-image: url(/img/arrow-active.svg);
+  background-image: url(../img/arrow-active.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -900,7 +900,7 @@ template {
 
 .swiper-button-disabled {
   border-color: #5a7184;
-  background-image: url(/img/arrow-unactive.svg);
+  background-image: url(../img/arrow-unactive.svg);
 }
 
 /* max-width: 1200px */
