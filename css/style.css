@@ -1466,7 +1466,7 @@ template {
     line-height: 22px;
   }
   .main__button-read {
-    padding: 7px 20px;
+    padding: 7px 27px;
   }
   .main__book-image {
     width: 250px;
@@ -1557,7 +1557,6 @@ template {
   }
   .button {
     width: auto;
-    height: auto;
   }
   .button-favorite {
     width: 14px;
