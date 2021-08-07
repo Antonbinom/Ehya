@@ -689,7 +689,7 @@ template {
 }
 
 .recommend .button-like:active {
-  fill: #faad13;
+  fill: red;
 }
 
 .top__wrapper {
