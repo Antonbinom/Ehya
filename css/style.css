@@ -1203,10 +1203,6 @@ template {
   text-align: center;
 }
 
-.subscribe {
-  margin-bottom: 100px;
-}
-
 .subscribe__wrapper {
   display: flex;
   align-items: center;
@@ -1262,7 +1258,7 @@ template {
   position: absolute;
   top: 0;
   right: 0;
-  min-width: 163px;
+  min-width: 169px;
   height: 100%;
   border: 3px solid #ffffff;
   font-weight: bold;
@@ -1283,6 +1279,99 @@ template {
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
+}
+
+.footer {
+  padding: 108px 0 80px;
+}
+
+.footer__wrapper {
+  display: flex;
+  margin-bottom: 72px;
+}
+
+.footer__main {
+  margin-right: 59px;
+}
+
+.footer__product {
+  margin-right: 82px;
+}
+
+.footer__service {
+  margin-right: 82px;
+}
+
+.footer__company {
+  margin-right: 94px;
+}
+
+.footer__tagline {
+  margin-top: 25px;
+  width: 233px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.footer__link {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 40px;
+}
+
+.footer__link-google {
+  margin-right: 2px;
+}
+
+.footer__link-twitter {
+  margin-right: 2px;
+}
+
+.footer__link-instagram {
+  margin-right: 2px;
+}
+
+.footer__link-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer__title {
+  margin-bottom: 31px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.footer__list {
+  padding: 0;
+}
+
+.footer__list-item {
+  margin-bottom: 24px;
+  list-style: none;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__icon {
+  margin-bottom: 21px;
+}
+
+.footer__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /* max-width: 1200px */
