@@ -101,12 +101,49 @@
 			width: 14px
 			height: 13px
 	.publishers
-		padding: 37px 0 56px
+		padding: 37px 0 57px
 		&__wrapper
 			align-items: center
 			grid-template-columns: repeat(3, 1fr)
 			grid-column-gap: 20px
 			grid-row-gap: 20px
+		&__title
+			width: 280px
 		&__image
 			&:nth-child(n+10)
 				display: none
+	.blog
+		position: relative
+		padding: 56px 0 48px
+		&__wrapper
+			padding-left: 5px
+		&__head
+			justify-content: center
+			margin-bottom: 48px
+		&__title
+			font-size: 28px
+			line-height: 36px
+		&__card
+			&-title
+				&-main
+					font-size: 16px
+					line-height: 20px
+			&-info
+				width: 240px
+			&-description
+				font-size: 12px
+				line-height: 24px
+		&__button
+			&--visible
+				display: none
+			&--hidden
+				display: inline-block
+				margin-top: 35px
+				padding: 10px 47px
+				font-family: Roboto Condensed
+				font-style: normal
+				font-weight: bold
+				font-size: 14px
+				line-height: 20px
+				text-align: center
+				letter-spacing: 0.175px

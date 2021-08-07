@@ -1,0 +1,97 @@
+.blog
+	padding: 100px 0
+	&__head
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 40px
+	&__title
+		font-family: Roboto Condensed
+		font-style: normal
+		font-weight: bold
+		font-size: 48px
+		line-height: 60px
+		letter-spacing: 0.2px
+	&__button
+		padding: 10px 54px
+		font-family: Roboto Condensed
+		font-style: normal
+		font-weight: bold
+		font-size: 16px
+		line-height: 20px
+		text-align: center
+		letter-spacing: 0.2px
+		color: $blue
+		border: 2px solid $blue
+		border-radius: 2000px
+		&--hidden
+			display: none
+	&__items
+		display: grid
+		grid-template-columns: 556px 1fr
+		grid-template-rows: repeat(3, 1fr)
+		grid-row-gap: 27px
+		grid-column-gap: 30px
+	&__card
+		grid-row: span 1
+		display: flex
+		&-main
+			grid-row: span 3
+			flex-direction: column
+		&-image
+			border-radius: 30px
+			&-main
+				margin-bottom: 27px
+			&-other
+				margin-right: 36px
+		&-picture
+			border-radius: $border
+			object-fit: cover
+		&-info
+			&-main
+				width: 536px
+				padding-left: 10px
+			&-other
+				padding: 6px 0 9px
+				width: 262px
+				display: flex
+				flex-direction: column
+		&-title
+			margin-bottom: 18px
+			font-family: Roboto
+			font-style: normal
+			font-weight: 500
+			font-size: 22px
+			line-height: 32px
+			letter-spacing: 0.2px
+			&-main
+				margin-bottom: 16px
+				font-family: Roboto Condensed
+				font-style: normal
+				font-weight: bold
+				font-size: 24px
+				line-height: 32px
+				letter-spacing: 0.2px
+		&-description
+			font-size: 18px
+			line-height: 32px
+			color: $gray
+		&-date
+			display: inline-block
+			margin-bottom: 16px
+			font-size: 14px
+			line-height: 20px
+			color: $gray
+			text-transform: uppercase
+		&-link
+			margin-top: auto
+			text-transform: uppercase
+			font-family: Roboto Condensed
+			font-style: normal
+			font-weight: bold
+			font-size: 16px
+			line-height: 20px
+			letter-spacing: 0.2px
+			color: $blue
+	&__bottom
+		text-align: center

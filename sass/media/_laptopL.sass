@@ -72,6 +72,39 @@
 			width: auto
 			grid-column-gap: 80px
 			grid-row-gap: 40px
+	.blog
+		&__items
+			grid-template-columns: 450px 1fr
+			grid-template-rows: repeat(3, 1fr)
+			grid-gap: 20px
+		&__card
+			&-image
+				&-main
+					margin-bottom: 27px
+					height: 324px
+				&-other
+					margin-right: 25px
+			&-picture
+				object-fit: cover
+				width: 100%
+				height: 100%
+			&-info
+				&-main
+					width: 430px
+				&-other
+					width: 200px
+			&-title
+				font-size: 16px
+				line-height: 1.6
+				&-main
+					font-size: 20px
+					line-height: 1.6
+			&-description
+				font-size: 14px
+				line-height: 1.6
+			&-date
+				margin-bottom: 10px
+				font-size: 12px
 @media (min-width: 993px)
 	.button
 		transition: .2s linear

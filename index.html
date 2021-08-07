@@ -465,7 +465,7 @@
     <section class="publishers">
       <div class="container">
         <h3 class="publishers__title">
-          Некоторые из издателей, <br class="publisher-wrap" />с которыми мы сотрудничали
+          Некоторые из издателей, <br class="publishers-wrap" />с которыми мы сотрудничали
         </h3>
         <div class="publishers__wrapper">
           <img src="img/slack.svg" alt="Image: sLack" class="publishers__image" />
@@ -490,14 +490,16 @@
         <div class="blog__wrapper">
           <div class="blog__head">
             <h2 class="blog__title">Ehya Блог</h2>
-            <buton class="blog__button button">Все Блоги</buton>
+            <a href="#" class="blog__button blog__button--visible button--white button">Все Блоги</a>
           </div>
           <!-- /.blog__head -->
           <div class="blog__items">
             <div class="blog__card blog__card-main">
-              <img src="img/blog-main.jpg" alt="Image: Blog" class="blog__card-image blog__card-image-main" />
+              <div class="blog__card-image blog__card-image-main">
+                <img src="img/blog-main.jpg" alt="Image: Blog" class="blog__card-picture blog__card-picture-main" />
+              </div>
               <div class="blog__card-info-main">
-                <h4 class="blog__card-title">Success Steps For Your Business Life</h4>
+                <h4 class="blog__card-title-main">Success Steps For Your Business Life</h4>
                 <p class="blog__card-description">
                   This is the author story section. Every week we try to give you the story of book writer. Tell all of
                   you the behind the scene of their books.
@@ -505,24 +507,30 @@
               </div>
             </div>
             <div class="blog__card">
-              <img src="img/blog-1.jpg" alt="Image: Blog" class="blog__image blog__card-image" />
-              <div class="blog__card-info">
+              <div class="blog__card-image blog__card-image-other">
+                <img src="img/blog-1.jpg" alt="Image: Blog" class="blog__card-picture" />
+              </div>
+              <div class="blog__card-info blog__card-info-other">
                 <span class="blog__card-date"> 23 марта 2020 </span>
-                <h4 class="blog__card-title">29 Motivational Quotes for Work Environments</h4>
+                <h4 class="blog__card-title">29 Motivational Quotes <br class="blog-wrap" />for Work Environments</h4>
                 <a href="#" class="blog__card-link">Читать</a>
               </div>
             </div>
             <div class="blog__card">
-              <img src="img/blog-2.jpg" alt="Image: Blog" class="blog__image blog__card-image" />
-              <div class="blog__card-info">
+              <div class="blog__card-image blog__card-image-other">
+                <img src="img/blog-2.jpg" alt="Image: Blog" class="blog__card-picture" />
+              </div>
+              <div class="blog__card-info blog__card-info-other">
                 <span class="blog__card-date"> 28 марта 2020 </span>
-                <h4 class="blog__card-title">Learn To Love Growth and You Will Be A Success</h4>
+                <h4 class="blog__card-title">Learn To Love Growth <br class="blog-wrap" />and You Will Be A Succes</h4>
                 <a href="#" class="blog__card-link">Читать</a>
               </div>
             </div>
             <div class="blog__card">
-              <img src="img/blog-3.jpg" alt="Image: Blog" class="blog__image blog__card-image" />
-              <div class="blog__card-info">
+              <div class="blog__card-image blog__card-image-other">
+                <img src="img/blog-3.jpg" alt="Image: Blog" class="blog__card-picture" />
+              </div>
+              <div class="blog__card-info blog__card-info-other">
                 <span class="blog__card-date"> 28 марта 2020 </span>
                 <h4 class="blog__card-title">Motivation How To Build Trust at your Work</h4>
                 <a href="#" class="blog__card-link">Читать</a>
@@ -530,6 +538,9 @@
             </div>
           </div>
           <!-- /.blog__items -->
+          <div class="blog__bottom">
+            <a href="#" class="blog__button blog__button--hidden button">Все Блоги</a>
+          </div>
         </div>
         <!-- /.blog__wrapper -->
       </div>
