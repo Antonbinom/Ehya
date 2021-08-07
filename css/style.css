@@ -1231,31 +1231,38 @@ template {
 }
 
 .subscribe__shape {
-  padding-top: 9px;
+  margin-bottom: -20px;
   width: 447px;
   height: 56px;
-}
-
-.subscribe__form {
-  position: relative;
-  min-height: 54px;
+  background-color: #ffffff;
   overflow: hidden;
   border-radius: 8px;
   border: 1px solid #C3CAD9;
 }
 
+.subscribe__form {
+  position: relative;
+  min-height: 52px;
+}
+
 .subscribe__input {
+  width: 100%;
+  padding-right: 178px;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: #959ead;
 }
 
+.subscribe__input-wrapper {
+  height: 54px;
+}
+
 .subscribe__button {
   position: absolute;
   top: 0;
   right: 0;
-  min-width: 170px;
+  min-width: 163px;
   height: 100%;
   border: 3px solid #ffffff;
   font-weight: bold;
@@ -1263,6 +1270,10 @@ template {
   line-height: 22px;
   color: #ffffff;
   background-color: #faad13;
+}
+
+.subscribe-wrap {
+  display: none;
 }
 
 .form-icon {
@@ -1404,6 +1415,18 @@ template {
   .blog__card-date {
     margin-bottom: 10px;
     font-size: 12px;
+  }
+  .subscribe__wrapper {
+    padding: 60px 40px 80px;
+  }
+  .subscribe__shape {
+    width: 427px;
+  }
+  .subscribe__input {
+    padding-right: 160px;
+  }
+  .subscribe__button {
+    min-width: 150px;
   }
 }
 
@@ -1582,6 +1605,27 @@ template {
   .blog__card-date {
     font-size: 14px;
     line-height: 20px;
+  }
+  .subscribe__wrapper {
+    height: auto;
+    padding: 60px 40px 60px;
+    flex-direction: column;
+    align-items: start;
+  }
+  .subscribe__title {
+    margin-bottom: 32px;
+    font-size: 30px;
+    line-height: 1.6;
+  }
+  .subscribe__shape {
+    margin-bottom: 0;
+    width: 427px;
+  }
+  .subscribe__input {
+    padding-right: 160px;
+  }
+  .subscribe__button {
+    min-width: 150px;
   }
 }
 
@@ -1930,6 +1974,50 @@ template {
     line-height: 20px;
     text-align: center;
     letter-spacing: 0.175px;
+  }
+  .subscribe {
+    padding-bottom: 10px;
+    background-image: url(../img/sub-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .subscribe__wrapper {
+    background-image: none;
+    height: auto;
+    padding: 27px 8px 8px 8px;
+    flex-direction: column;
+    align-items: start;
+  }
+  .subscribe__title {
+    width: 100%;
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .subscribe__shape {
+    padding: 0 8px 8px;
+    width: 100%;
+    height: 112px;
+    padding-bottom: 12px;
+  }
+  .subscribe__input {
+    padding-right: 24px;
+  }
+  .subscribe__button {
+    min-width: 150px;
+    top: revert;
+    left: 0;
+    width: 100%;
+  }
+  .subscribe-wrap {
+    display: block;
+  }
+  __form {
+    min-height: 42px;
+  }
+  __input-wrapper {
+    height: 42px;
   }
 }
 
