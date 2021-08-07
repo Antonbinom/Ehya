@@ -1290,6 +1290,10 @@ template {
   margin-bottom: 72px;
 }
 
+.footer__columns {
+  display: flex;
+}
+
 .footer__main {
   margin-right: 59px;
 }
@@ -1349,6 +1353,7 @@ template {
 
 .footer__list {
   padding: 0;
+  margin: 0;
 }
 
 .footer__list-item {
@@ -1516,6 +1521,18 @@ template {
   }
   .subscribe__button {
     min-width: 150px;
+  }
+  .footer__main {
+    margin-right: 60px;
+  }
+  .footer__product {
+    margin-right: 60px;
+  }
+  .footer__service {
+    margin-right: 60px;
+  }
+  .footer__company {
+    margin-right: 70px;
   }
 }
 
@@ -1716,6 +1733,27 @@ template {
   .subscribe__button {
     min-width: 150px;
   }
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+  .footer__columns {
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin-bottom: 47px;
+  }
+  .footer__main {
+    margin-right: 0;
+    order: 2;
+  }
+  .footer__product {
+    margin-right: 0;
+  }
+  .footer__service {
+    margin-right: 0;
+  }
+  .footer__company {
+    margin-right: 0;
+  }
 }
 
 /* max-width: 768px */
@@ -1877,6 +1915,16 @@ template {
     line-height: 1.6;
     letter-spacing: 0.125px;
   }
+  .footer__title {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .footer__list-item {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 /* max-width: 576px */
@@ -2028,7 +2076,8 @@ template {
     padding: 56px 0 48px;
   }
   .blog__wrapper {
-    padding-left: 5px;
+    margin-left: 5px;
+    margin-right: 3px;
   }
   .blog__head {
     justify-content: center;
@@ -2107,6 +2156,49 @@ template {
   }
   .form-icon {
     left: 10px;
+  }
+  .footer {
+    padding: 48px 0 64px;
+  }
+  .footer__wrapper {
+    justify-content: center;
+    margin-right: 6px;
+    padding-left: 8px;
+  }
+  .footer__columns {
+    flex-wrap: wrap;
+    margin-bottom: 44px;
+  }
+  .footer__product {
+    flex-basis: 52%;
+    margin-bottom: 39px;
+  }
+  .footer__service {
+    flex-basis: 48%;
+  }
+  .footer__company {
+    flex-basis: 52%;
+  }
+  .footer__more {
+    flex-basis: 48%;
+  }
+  .footer__main {
+    order: 2;
+    text-align: center;
+  }
+  .footer__logo {
+    margin-bottom: 16px;
+  }
+  .footer__tagline {
+    margin-top: 11px;
+    margin-right: 11px;
+    margin-bottom: 14px;
+  }
+  .footer__copyright {
+    display: none;
+  }
+  .footer__list-item:last-child {
+    margin: 0;
   }
 }
 
