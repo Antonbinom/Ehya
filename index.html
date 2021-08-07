@@ -547,6 +547,34 @@
       <!-- /.container -->
     </section>
     <!-- /.blog -->
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__wrapper">
+          <h3 class="subscribe__title">Будь первым, кто узнает о наших акциях</h3>
+          <div class="subscribe__shape">
+            <form action="send.php" method="POST" class="form subscribe__form">
+              <div class="input-wrapper input-wrapper--subscribe">
+                <input
+                  type="email"
+                  class="input subscribe__input"
+                  placeholder="Ваш Email"
+                  name="mail"
+                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                />
+              </div>
+              <svg class="form-icon">
+                <use xlink:href="img/sprite.svg#envelop"></use>
+              </svg>
+              <button class="subscribe__button button">Регистрация</button>
+            </form>
+          </div>
+        </div>
+        <!-- /.subscribe__wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.subscribe -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>

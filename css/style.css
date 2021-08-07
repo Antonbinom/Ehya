@@ -1068,7 +1068,7 @@ template {
 }
 
 .blog {
-  padding: 100px 0;
+  padding: 100px 0 97px;
 }
 
 .blog__head {
@@ -1201,6 +1201,77 @@ template {
 
 .blog__bottom {
   text-align: center;
+}
+
+.subscribe {
+  margin-bottom: 100px;
+}
+
+.subscribe__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 60px 63px 80px 60px;
+  background-image: url(../img/sub-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe__title {
+  width: 393px;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.subscribe__shape {
+  padding-top: 9px;
+  width: 447px;
+  height: 56px;
+}
+
+.subscribe__form {
+  position: relative;
+  min-height: 54px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #C3CAD9;
+}
+
+.subscribe__input {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #959ead;
+}
+
+.subscribe__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 170px;
+  height: 100%;
+  border: 3px solid #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: #faad13;
+}
+
+.form-icon {
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
 }
 
 /* max-width: 1200px */
