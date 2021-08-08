@@ -55,10 +55,6 @@ a {
   height: 70px;
 }
 
-.input-wrapper--subscribe {
-  height: 71px;
-}
-
 .invalid {
   bottom: 4px;
   position: absolute;
@@ -1333,7 +1329,7 @@ template {
   padding-top: 15px;
 }
 
-.input-wrapper--subscribe {
+.input-wrapper-subscribe {
   height: 71px;
 }
 
@@ -2379,7 +2375,7 @@ template {
   .subscribe-wrap {
     display: block;
   }
-  .input-wrapper--subscribe {
+  .input-wrapper-subscribe {
     height: 54px;
   }
   .form-icon {
