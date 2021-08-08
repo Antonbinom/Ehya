@@ -1328,12 +1328,12 @@ template {
   left: 20px;
 }
 
-.form-icon__input-wrapper {
+.input-wrapper {
   width: 350px;
   padding-top: 15px;
 }
 
-.form-icon__input-wrapper--subscribe {
+.input-wrapper--subscribe {
   height: 71px;
 }
 
@@ -1920,25 +1920,6 @@ template {
     font-size: 30px;
     line-height: 1.6;
   }
-  .subscribe__shape {
-    background-color: #ffffff;
-    overflow: hidden;
-    border-radius: 8px;
-    border: 1px solid #C3CAD9;
-    margin-bottom: 0;
-    width: 427px;
-    height: 112px;
-  }
-  .subscribe__input {
-    padding-right: 160px;
-    border: none;
-  }
-  .subscribe__button {
-    min-width: 150px;
-  }
-  .input-wrapper--subscribe {
-    height: 54px;
-  }
   .footer__wrapper {
     flex-wrap: wrap;
   }
@@ -2319,6 +2300,12 @@ template {
     font-size: 28px;
     line-height: 36px;
   }
+  .blog__card-image {
+    width: auto;
+  }
+  .blog__card-image-main {
+    width: auto;
+  }
   .blog__card-title-main {
     font-size: 16px;
     line-height: 20px;
@@ -2370,11 +2357,17 @@ template {
     width: 100%;
     height: 112px;
     padding-bottom: 12px;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #C3CAD9;
   }
   .subscribe__input {
     padding-top: 15px;
     padding-right: 24px;
     padding-left: 39px;
+    border: none;
   }
   .subscribe__button {
     min-width: 150px;
@@ -2385,6 +2378,9 @@ template {
   }
   .subscribe-wrap {
     display: block;
+  }
+  .input-wrapper--subscribe {
+    height: 54px;
   }
   .form-icon {
     left: 10px;
