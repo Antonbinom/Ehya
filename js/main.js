@@ -136,4 +136,48 @@ $(document).ready(function(){
       function videoPlay(event) {
         event.target.playVideo();
       }
+
+// ---------- Modal Window -----------
+
+  var modalButton = $('[data-toggle=modal]');
+  var closeModalButton = $('.modal__close');
+  modalButton.on('click', openModal);
+  closeModalButton.on('click', closeModal);
+
+  var modalOverlay = $('.modal__overlay');
+  var modalDialog = $('.modal__dialog');
+
+  function openModal() {
+      modalOverlay.addClass("modal__overlay--visible");
+      modalDialog.addClass("modal__dialog--visible");
+
+    $('body').addClass('hold');
+  };
+
+
+  function closeModal(event) {
+    event.preventDefault();
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+
+    $('body').removeClass('hold');
+  };
+
+  $('.modal').on('click', function(event) {
+    modalDialog.removeClass('modal__dialog--visible');
+    modalOverlay.removeClass('modal__overlay--visible');
+    $('body').removeClass('hold');
+  });
+
+  $(document).on('keydown', function(event) {
+    if (event.code == 'Escape') {
+      modalDialog.removeClass('modal__dialog--visible');
+      modalOverlay.removeClass('modal__overlay--visible');
+      $('body').removeClass('hold');
+    }
+  });
+
+  $('.modal__dialog').on('click', function(event) {
+    event.stopPropagation();
+  });
 });
