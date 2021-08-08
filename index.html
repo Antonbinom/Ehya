@@ -687,6 +687,53 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="modal" id="modal-window">
+      <div class="modal__overlay">
+        <div class="modal__dialog">
+          <a href="#" class="modal__close">
+            <!-- <img src="img/cancel.svg" alt="Icon: Close" /> -->
+            <svg class="modal__close">
+              <use xlink:href="img/sprite.svg#cross"></use>
+            </svg>
+          </a>
+          <h3 class="modal__title">Оформление</h3>
+          <form action="send.php" class="modal__form form" method="post">
+            <div class="input-wrapper">
+              <input
+                type="text"
+                class="modal__input input--error input"
+                placeholder="Ваше Имя*"
+                minlength="2"
+                name="name"
+                pattern="^[a-zA-Z]{0,50}$"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <input
+                type="tel"
+                class="modal__input input-phone input"
+                placeholder="Ваш Телефон*"
+                name="phone"
+                required
+                minlength="11"
+                maxlength="11"
+                aria-invalid="true"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <input type="email" class="modal__input input" placeholder="Ваш Email*" name="mail" required />
+            </div>
+            <button type="submit" class="modal__button button--blue button">Отправить</button>
+          </form>
+          <!-- /.modal-form -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal-overlay -->
+    </div>
+    <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
