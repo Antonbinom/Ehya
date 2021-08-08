@@ -1325,7 +1325,6 @@ template {
 }
 
 .input-wrapper {
-  width: 350px;
   padding-top: 15px;
 }
 
@@ -1976,6 +1975,7 @@ template {
   }
   .header__menu-item {
     margin-bottom: 10px;
+    margin-right: 0;
   }
   .header__burger-menu--visible {
     display: block;
