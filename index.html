@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/fancybox.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -444,16 +445,22 @@
           <!-- /.author__head -->
           <div class="author__items">
             <div class="author__video author__video-main" id="player">
-              <script src="https://www.youtube.com/iframe_api"></script>
-              <img
-                src="img/video-main.svg"
-                alt="Image: Icon-Play"
+              <a
                 class="author__video-icon author__video-icon--main play"
-              />
+                data-fancybox="video"
+                data-caption="YouTube"
+                href="https://www.youtube.com/watch?v=__Kavgr47F8&t=841s"
+                ><img src="img/video-main.svg" alt="Image: Icon-Play"
+              /></a>
             </div>
             <div class="author__video">
               <div class="author__video-wrapper author__video-wrapper--two">
-                <img src="img/video.svg" alt="Image: Icon-Play" class="author__video-icon" />
+                <a
+                  class="author__video-icon author__video-icon--main play"
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=__Kavgr47F8&t=841s"
+                  ><img src="img/video.svg" alt="Image: Icon-Play"
+                /></a>
               </div>
               <div class="author__bottom">
                 <div class="author__info">
@@ -469,7 +476,12 @@
             </div>
             <div class="author__video">
               <div class="author__video-wrapper author__video-wrapper--three">
-                <img src="img/video.svg" alt="Image: Icon-Play" class="author__video-icon" />
+                <a
+                  class="author__video-icon author__video-icon--main play"
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=__Kavgr47F8&t=841s"
+                  ><img src="img/video.svg" alt="Image: Icon-Play"
+                /></a>
               </div>
               <div class="author__bottom">
                 <div class="author__info">
@@ -485,7 +497,12 @@
             </div>
             <div class="author__video">
               <div class="author__video-wrapper author__video-wrapper--four">
-                <img src="img/video.svg" alt="Image: Icon-Play" class="author__video-icon" />
+                <a
+                  class="author__video-icon author__video-icon--main play"
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=__Kavgr47F8&t=841s"
+                  ><img src="img/video.svg" alt="Image: Icon-Play"
+                /></a>
               </div>
               <div class="author__bottom">
                 <div class="author__info">
@@ -592,7 +609,7 @@
       <!-- /.container -->
     </section>
     <!-- /.blog -->
-    <section class="-">
+    <section class="subscribe">
       <div class="container">
         <div class="subscribe__wrapper">
           <h3 class="subscribe__title">
@@ -788,6 +805,7 @@
     </div>
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/fancybox.esm.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>

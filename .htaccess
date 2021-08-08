@@ -1,0 +1,2 @@
+RewriteEngine On
+ErrorDocument 404 https://www.antonbinom.ru/10/404.php
