@@ -34,6 +34,12 @@
 		&__title
 			font-size: 22px
 			line-height: 32px
+	.sections
+		&-image
+			&-wrapper
+				width: 36px
+				height: 36px
+				margin-bottom: 16px
 	.unreleased
 		padding: 49px 0 50px
 		&__wrapper
@@ -54,8 +60,12 @@
 				bottom: -89px
 				width: 48px
 				height: 48px
+				background-image: url(../img/button-active-s.svg)
 				&--prev
 					right: 53%
+					transform: rotate(180deg)
+					&:disabled
+						transform: rotate(180deg)
 				&--next
 					left: 53%
 	.author
@@ -191,6 +201,7 @@
 			justify-content: center
 			margin-right: 6px
 			padding-left: 8px
+			margin-bottom: 0
 		&__columns
 			flex-wrap: wrap
 			margin-bottom: 44px
