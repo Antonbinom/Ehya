@@ -27,6 +27,24 @@ a
 	border: none
 	border-radius: $border
 	outline: none
+	&--error
+		&:invalid
+			color: #fa1111
+		&:valid
+			color: #b4141
+	&-wrapper
+		position: relative
+		margin-bottom: 6px
+		height: 70px
+		&--subscribe
+			height: 71px
+.invalid
+	bottom: 4px
+	position: absolute
+	color: red
+	font-size: 12px
+	&--hidden
+		display: none
 .button
 	font-style: normal
 	font-weight: bold

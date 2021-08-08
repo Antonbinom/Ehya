@@ -41,6 +41,35 @@ a {
   outline: none;
 }
 
+.input--error:invalid {
+  color: #fa1111;
+}
+
+.input--error:valid {
+  color: #b4141;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 6px;
+  height: 70px;
+}
+
+.input-wrapper--subscribe {
+  height: 71px;
+}
+
+.invalid {
+  bottom: 4px;
+  position: absolute;
+  color: red;
+  font-size: 12px;
+}
+
+.invalid--hidden {
+  display: none;
+}
+
 .button {
   font-style: normal;
   font-weight: bold;
@@ -1227,13 +1256,8 @@ template {
 }
 
 .subscribe__shape {
-  margin-bottom: -20px;
+  margin-bottom: -36px;
   width: 447px;
-  height: 56px;
-  background-color: #ffffff;
-  overflow: hidden;
-  border-radius: 8px;
-  border: 1px solid #C3CAD9;
 }
 
 .subscribe__form {
@@ -1243,15 +1267,16 @@ template {
 
 .subscribe__input {
   width: 100%;
+  position: absolute;
+  top: 0;
   padding-right: 178px;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: #959ead;
-}
-
-.subscribe__input-wrapper {
-  height: 54px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #C3CAD9;
 }
 
 .subscribe__button {
@@ -1259,7 +1284,7 @@ template {
   top: 0;
   right: 0;
   min-width: 169px;
-  height: 100%;
+  height: 56px;
   border: 3px solid #ffffff;
   font-weight: bold;
   font-size: 16px;
@@ -1276,9 +1301,21 @@ template {
   position: absolute;
   width: 16px;
   height: 18px;
-  top: 50%;
+  top: 18px;
   left: 20px;
-  transform: translateY(-50%);
+}
+
+.form-icon__input-wrapper {
+  width: 350px;
+  padding-top: 15px;
+}
+
+.form-icon__input-wrapper--subscribe {
+  height: 71px;
+}
+
+.invalid {
+  bottom: 0;
 }
 
 .footer {
@@ -1417,7 +1454,7 @@ template {
   background-color: #1565d8;
   border-radius: 8px;
   visibility: hidden;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.2s;
 }
 
@@ -1441,6 +1478,8 @@ template {
 }
 
 .modal__input {
+  position: absolute;
+  top: 0;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 16px;
@@ -1795,6 +1834,9 @@ template {
     font-size: 14px;
     line-height: 20px;
   }
+  .subscribe {
+    background-color: #fff;
+  }
   .subscribe__wrapper {
     height: auto;
     padding: 60px 40px 60px;
@@ -1807,14 +1849,23 @@ template {
     line-height: 1.6;
   }
   .subscribe__shape {
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #C3CAD9;
     margin-bottom: 0;
     width: 427px;
+    height: 112px;
   }
   .subscribe__input {
     padding-right: 160px;
+    border: none;
   }
   .subscribe__button {
     min-width: 150px;
+  }
+  .input-wrapper--subscribe {
+    height: 54px;
   }
   .footer__wrapper {
     flex-wrap: wrap;
