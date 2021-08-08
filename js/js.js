@@ -92,27 +92,27 @@
 // };
 
 
-// function closeModal(event) {
-//   event.preventDefault();
-// 		modalOverlay.removeClass("modal__overlay--visible");
-// 		modalDialog.removeClass("modal__dialog--visible");
+function closeModal(event) {
+  event.preventDefault();
+		modalOverlay.removeClass("modal__overlay--visible");
+		modalDialog.removeClass("modal__dialog--visible");
 
-//   $('body').removeClass('hold');
-// };
+  $('body').removeClass('hold');
+};
 
-// $('.modal').on('click', function(event) {
-//   modalDialog.removeClass('modal__dialog--visible');
-//   modalOverlay.removeClass('modal__overlay--visible');
-//   $('body').removeClass('hold');
-// });
+$('.modal').on('click', function(event) {
+  modalDialog.removeClass('modal__dialog--visible');
+  modalOverlay.removeClass('modal__overlay--visible');
+  $('body').removeClass('hold');
+});
 
-// $(document).on('keydown', function(event) {
-//   if (event.code == 'Escape') {
-//     modalDialog.removeClass('modal__dialog--visible');
-//     modalOverlay.removeClass('modal__overlay--visible');
-//     $('body').removeClass('hold');
-//   }
-// });
+$(document).on('keydown', function(event) {
+  if (event.code == 'Escape') {
+    modalDialog.removeClass('modal__dialog--visible');
+    modalOverlay.removeClass('modal__overlay--visible');
+    $('body').removeClass('hold');
+  }
+});
 
 // $('.modal__dialog').on('click', function(event) {
 //   event.stopPropagation();

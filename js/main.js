@@ -141,7 +141,7 @@ $(document).ready(function(){
       modalDialog.removeClass("modal__dialog--visible");
 
     $('body').removeClass('hold');
-    $('.invalid').removeClass('invalid');
+    $('.invalid').toggle('invaild--hidden');
   };
 
   $('.modal').on('click', function(event) {
@@ -156,9 +156,9 @@ $(document).ready(function(){
       modalDialog.removeClass('modal__dialog--visible');
       modalOverlay.removeClass('modal__overlay--visible');
       $('body').removeClass('hold');
-      $('.invalid').removeClass('invalid');
-    }
-  });
+      $('.invalid').toggle('invaild--hidden');
+  };
+});
 
   $('.modal__dialog').on('click', function(event) {
     event.stopPropagation();
