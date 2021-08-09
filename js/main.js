@@ -67,13 +67,13 @@ $(document).ready(function(){
       slidesPerView: 1,
       spaceBetween: 30,
     },
-    460: {
+    461: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
     490: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
     576: {
       slidesPerView: 2,
@@ -117,6 +117,56 @@ $(document).ready(function(){
   },
 });
 
+// Главное видео
+$(".video-play-main").on("click", function onYouTubeIframeAPIReady() {
+  player = new YT.Player("main-player", {
+    videoId: "F8MN0o6RS9o",
+    width: '100%',
+    height: '100%',
+    events: {
+      onReady: videoPlay,
+    },
+  });
+});
+function videoPlay(event) {
+  event.target.playVideo();
+  event.target.setVolume(10);
+}
+
+// Видео 1
+$(".video-play-2").on("click", function onYouTubeIframeAPIReady() {
+  player = new YT.Player("video-two", {
+    videoId: "I-zPNQYHSvU",
+    width: '100%',
+    height: '100%',
+    events: {
+      onReady: videoPlay,
+    },
+  });
+});
+// Видео 2
+$(".video-play-3").on("click", function onYouTubeIframeAPIReady() {
+  player = new YT.Player("video-three", {
+    videoId: "6vnxzfejWN4",
+    width: '100%',
+    height: '100%',
+    events: {
+      onReady: videoPlay,
+    },
+  });
+});
+
+// Видео 3
+$(".video-play-4").on("click", function onYouTubeIframeAPIReady() {
+  player = new YT.Player("video-four", {
+    videoId: "vd205Q_EE18",
+    width: '100%',
+    height: '100%',
+    events: {
+      onReady: videoPlay,
+    },
+  });
+});
 // ---------- Modal Window -----------
 
   var modalButton = $('[data-toggle=modal]');
@@ -202,5 +252,27 @@ $(".form").each(function () {
 	});
 $(document).ready(function () {
   $(".input-phone").mask("+7 (000) 000-00-00");
-});
+
+  function trackScroll() {
+    var scrolled = window.pageYOffset;
+    var coords = document.documentElement.clientHeight;
+
+    if (scrolled > coords) {
+      goTopBtn.classList.add('button__to-top-show');
+    }
+    if (scrolled < coords) {
+      goTopBtn.classList.remove('button__to-top-show');
+    }
+  }
+  function backToTop() {
+    if (window.pageYOffset > 0) {
+      window.scrollBy(0, -80);
+      setTimeout(backToTop, 10);
+    }
+  }
+  var goTopBtn = document.querySelector('.button__to-top');
+
+  window.addEventListener('scroll', trackScroll);
+  goTopBtn.addEventListener('click', backToTop);
+  });
 });
