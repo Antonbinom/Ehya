@@ -48,7 +48,7 @@ a {
 }
 
 .input--error:valid {
-  color: #b4141;
+  color: #183b56;
 }
 
 .input-wrapper {
@@ -536,8 +536,6 @@ template {
   font-size: 18px;
   line-height: 32px;
   color: #5a7184;
-  overflow: auto;
-  height: 161px;
 }
 
 .main__button-buy {
@@ -954,7 +952,7 @@ template {
 .author__head {
   display: flex;
   justify-content: space-between;
-  margin: 28px 0 24px;
+  margin: 28px 0 19px;
 }
 
 .author__items {
