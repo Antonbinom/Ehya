@@ -1564,7 +1564,7 @@ template {
   text-align: center;
 }
 
-.button__to-top {
+.button-to-top {
   position: fixed;
   padding: 5px;
   bottom: 80px;
@@ -1580,13 +1580,13 @@ template {
   display: none;
 }
 
-.button__to-top:hover {
+.button-to-top:hover {
   background: #ffffff;
   border-radius: 8px;
   border: 2px solid #1565d8;
 }
 
-.button__to-top-show {
+.button-to-top-show {
   display: block;
 }
 
@@ -2169,7 +2169,7 @@ template {
     padding: 13px 20px;
     font-size: 14px;
   }
-  .button__to-top {
+  .button-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;

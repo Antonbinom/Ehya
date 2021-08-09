@@ -259,10 +259,10 @@ $(document).ready(function () {
     var coords = document.documentElement.clientHeight;
 
     if (scrolled > coords) {
-      goTopBtn.classList.add('button__to-top-show');
+      goTopBtn.classList.add('button-to-top-show');
     }
     if (scrolled < coords) {
-      goTopBtn.classList.remove('button__to-top-show');
+      goTopBtn.classList.remove('button-to-top-show');
     }
   }
   function backToTop() {
@@ -271,7 +271,7 @@ $(document).ready(function () {
       setTimeout(backToTop, 10);
     }
   }
-  var goTopBtn = document.querySelector('.button__to-top');
+  var goTopBtn = document.querySelector('.button-to-top');
 
   window.addEventListener('scroll', trackScroll);
   goTopBtn.addEventListener('click', backToTop);
