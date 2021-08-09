@@ -221,25 +221,30 @@
                 placeholder="Ваше Имя*"
                 minlength="2"
                 name="name"
-                pattern="^[a-zA-Z]{0,50}$"
+                pattern="^[a-zA-Zа-яА-я]{0,50}$"
                 required
               />
             </div>
             <div class="input-wrapper">
               <input
                 type="tel"
-                class="modal__input input-phone input"
+                class="modal__input input-phone input--error input"
                 placeholder="Ваш Телефон*"
                 name="phone"
                 required
-                minlength="11"
-                maxlength="11"
+                minlength="18"
+                maxlength="18"
                 aria-invalid="true"
-                required
               />
             </div>
             <div class="input-wrapper">
-              <input type="email" class="modal__input input" placeholder="Ваш Email*" name="mail" required />
+              <input
+                type="email"
+                class="modal__input input--error input"
+                placeholder="Ваш Email*"
+                name="mail"
+                required
+              />
             </div>
             <button type="submit" class="modal__button button--blue button">Отправить</button>
           </form>
