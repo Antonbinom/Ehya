@@ -10,23 +10,30 @@ $(document).ready(function(){
     $('body').toggleClass('hold');
   });
 
-//   // ---------- Hotel Slider -----------
+   // Like в рекомендация
+  document.querySelectorAll(".button-like").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      if (button.getAttribute("fill") === "#959EAD") {
+        button.setAttribute("fill", "#DC143C");
+      } else if (button.getAttribute("fill") === "#DC143C") {
+        button.setAttribute("fill", "#959EAD");
+      }
+    });
+  });
+  // ---------- Slider -----------
 
   const sectionsSlider = new Swiper('.sections__slider', {
   // Default parameters
   slidesPerView: 4,
   spaceBetween: 26,
 
-  // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 2,
       spaceBetween: 10,
       slidesPerColumn: 2,
       slidesPerColumnFill: 'row',
     },
-    // when window width is >= 640px
     568: {
       slidesPerView: 2,
       spaceBetween: 26,

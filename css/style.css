@@ -78,6 +78,11 @@ a {
 
 .hold {
   overflow: hidden;
+  padding-right: 15px;
+}
+
+#recommend, #books, #blog {
+  scroll-behavior: smooth;
 }
 
 /* Document
@@ -713,6 +718,10 @@ template {
   width: 18px;
   height: 21px;
   fill: #959ead;
+}
+
+.recommend .button-like:hover {
+  fill: #faad13;
 }
 
 .recommend .button-like:active {
@@ -1571,7 +1580,6 @@ template {
   background: #faad13;
   cursor: pointer;
   border: none;
-  display: none;
 }
 
 .button-to-top:hover {
@@ -1592,6 +1600,12 @@ template {
 }
 
 /* max-width: 1200px */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1872,12 +1886,6 @@ template {
   }
   .author__wrapper {
     width: 100%;
-  }
-  .author__video {
-    width: auto;
-  }
-  .author__video-main {
-    width: auto;
   }
   .author__video-wrapper {
     margin-bottom: 18px;

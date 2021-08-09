@@ -42,9 +42,9 @@
           </a>
           <div class="header__menu header__menu--hidden">
             <nav class="header__menu-nav">
-              <a href="#" class="header__menu-item">Рекомендации</a>
-              <a href="#" class="header__menu-item">Книги</a>
-              <a href="#" class="header__menu-item">Блог</a>
+              <a href="#recommend" class="header__menu-item">Рекомендации</a>
+              <a href="#books" class="header__menu-item">Книги</a>
+              <a href="#blog" class="header__menu-item">Блог</a>
             </nav>
             <button class="button header__button button--white" data-href="#modal-wndow" data-toggle="modal">
               Получить
@@ -104,7 +104,7 @@
     <section class="books">
       <div class="container">
         <div class="books__wrapper">
-          <div class="recommend">
+          <div id="recommend" class="recommend">
             <h3 class="recommend__title books__title">Рекомендации</h3>
             <div class="recommend__wrapper">
               <div class="recommend__card">
@@ -398,7 +398,7 @@
       <!-- /.container -->
     </section>
     <!-- /.sections -->
-    <section class="unreleased">
+    <section id="books" class="unreleased">
       <div class="container unreleased__container">
         <div class="unreleased__wrapper">
           <h3 class="unreleased__title">Неизданные книги</h3>
@@ -460,7 +460,7 @@
           <!-- /.author__head -->
           <div class="author__items">
             <div class="author__video author__video-main" id="main-player">
-              <script src="https://www.youtube.com/iframe_api"></script>
+              <script src="https://www.youtube.com/iframe_api" width: 700px></script>
               <img
                 src="img/video-main.svg"
                 alt="Image: Icon-Play"
@@ -563,7 +563,7 @@
     <!-- /.publishers -->
     <section class="blog">
       <div class="container">
-        <div class="blog__wrapper">
+        <div id="blog" class="blog__wrapper">
           <div class="blog__head">
             <h2 class="blog__title">Ehya Блог</h2>
             <a href="#" class="blog__button blog__button--visible button--white button">Все Блоги</a>
