@@ -181,10 +181,8 @@ $(".video-play-4").on("click", function onYouTubeIframeAPIReady() {
   function openModal() {
       modalOverlay.addClass("modal__overlay--visible");
       modalDialog.addClass("modal__dialog--visible");
-
     $('body').addClass('hold');
   };
-
 
   function closeModal(event) {
     event.preventDefault();
@@ -192,14 +190,12 @@ $(".video-play-4").on("click", function onYouTubeIframeAPIReady() {
       modalDialog.removeClass("modal__dialog--visible");
 
     $('body').removeClass('hold');
-    $('.invalid').toggle('invaild--hidden');
   };
 
   $('.modal').on('click', function(event) {
     modalDialog.removeClass('modal__dialog--visible');
     modalOverlay.removeClass('modal__overlay--visible');
     $('body').removeClass('hold');
-    $('.invalid').toggle('invaild--hidden');
   });
 
   $(document).on('keydown', function(event) {
@@ -207,7 +203,6 @@ $(".video-play-4").on("click", function onYouTubeIframeAPIReady() {
       modalDialog.removeClass('modal__dialog--visible');
       modalOverlay.removeClass('modal__overlay--visible');
       $('body').removeClass('hold');
-      $('.invalid').toggle('invaild--hidden');
   };
 });
 

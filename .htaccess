@@ -1,2 +1,2 @@
 RewriteEngine On
-ErrorDocument 404 https://www.antonbinom.ru/ehya-book/404.html
+ErrorDocument 404 https://www.antonbinom.ru/ehya-read/404.html
