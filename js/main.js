@@ -42,10 +42,15 @@
   });
 
   // Likes
-  var buttonLike = document.querySelector(".recommend__info-heart");
-    buttonLike.addEventListener("click", function () {
-    document.querySelector(".button-like").classList.toggle("button-like--active");
+  document.querySelectorAll(".icon-like").forEach((button) => {
+  button.addEventListener("click", (e) => {
+    if (button.getAttribute("fill") === "#959EAD") {
+      button.setAttribute("fill", "#DC143C");
+    } else if (button.getAttribute("fill") === "#DC143C") {
+      button.setAttribute("fill", "#959EAD");
+    }
   });
+});
 
   // Slider 1
   const sectionsSlider = new Swiper('.sections__slider', {

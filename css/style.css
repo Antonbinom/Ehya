@@ -714,15 +714,10 @@ template {
 
 .recommend .button-like {
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 0;
   width: 18px;
   height: 21px;
-  fill: #959ead;
-}
-
-.recommend .button-like--active {
-  fill: red;
 }
 
 .top__wrapper {
@@ -893,12 +888,6 @@ template {
   line-height: 48px;
   letter-spacing: 0.2px;
   color: #ffffff;
-}
-
-.unreleased__slider {
-  height: 298px;
-  margin: 0;
-  padding: 0;
 }
 
 .unreleased__slider-item {
