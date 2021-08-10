@@ -1,181 +1,199 @@
-// ---------- JQuery -----------
+  // JQuery
+  $(document).ready(function(){
 
-$(document).ready(function(){
-
-	// ---------- Burger Menu -----------
-
+  // Burger Menu
   var menuButton = document.querySelector(".burger-button");
   menuButton.addEventListener("click", function () {
     document.querySelector(".header__burger-menu").classList.toggle("header__burger-menu--visible");
     $('body').toggleClass('hold');
   });
 
-   // Like в рекомендация
-  document.querySelectorAll(".button-like").forEach((button) => {
-    button.addEventListener("click", (e) => {
-      if (button.getAttribute("fill") === "#959EAD") {
-        button.setAttribute("fill", "#DC143C");
-      } else if (button.getAttribute("fill") === "#DC143C") {
-        button.setAttribute("fill", "#959EAD");
-      }
+  $(function () {
+    $("a[href^='#recommend']").click(function () {
+      var _href = $(this).attr("href");
+      $("html, body").animate(
+        { scrollTop: $(_href).offset().top + "px" },
+        1000
+      );
+      return false;
     });
   });
-  // ---------- Slider -----------
 
+  $(function () {
+    $("a[href^='#books']").click(function () {
+      var _href = $(this).attr("href");
+      $("html, body").animate(
+        { scrollTop: $(_href).offset().top + "px" },
+        1000
+      );
+      return false;
+    });
+  });
+
+  $(function () {
+    $("a[href^='#blog']").click(function () {
+      var _href = $(this).attr("href");
+      $("html, body").animate(
+        { scrollTop: $(_href).offset().top + "px" },
+        1000
+      );
+      return false;
+    });
+  });
+
+  // Likes
+  var buttonLike = document.querySelector(".recommend__info-heart");
+    buttonLike.addEventListener("click", function () {
+    document.querySelector(".button-like").classList.toggle("button-like--active");
+  });
+
+  // Slider 1
   const sectionsSlider = new Swiper('.sections__slider', {
-  // Default parameters
-  slidesPerView: 4,
-  spaceBetween: 26,
+    slidesPerView: 4,
+    spaceBetween: 26,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        slidesPerColumn: 2,
+        slidesPerColumnFill: 'row',
+      },
+      568: {
+        slidesPerView: 2,
+        spaceBetween: 26,
+      },
+      769: {
+        slidesPerView: 3,
+        spaceBetween: 26,
+      },
+      993: {
+        slidesPerView: 4,
+        spaceBetween: 26,
+      },
+    },
+    loop: false,
+    watchOverflow: true,
+    autoHaight: false,
 
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-      slidesPerColumn: 2,
-      slidesPerColumnFill: 'row',
+    // Navigation arrows
+    navigation: {
+      nextEl: '.sections__slider-button--next',
+      prevEl: '.sections__slider-button--prev',
     },
-    568: {
-      slidesPerView: 2,
-      spaceBetween: 26,
+    // Переключение слайдера клавиатурой
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
     },
-    769: {
-      slidesPerView: 3,
-      spaceBetween: 26,
-    },
-    993: {
-      slidesPerView: 4,
-      spaceBetween: 26,
-    },
-  },
-  loop: false,
-  watchOverflow: true,
-  autoHaight: false,
-  // Navigation arrows
-  navigation: {
-    nextEl: '.sections__slider-button--next',
-    prevEl: '.sections__slider-button--prev',
-  },
-	// Переключение слайдера клавиатурой
-	keyboard: {
-    enabled: true,
-		onlyInViewport: false,
-  },
-});
+  });
   const unreleasedSlider = new Swiper('.unreleased__slider', {
-   // Optional parameters
-  slidesPerView: 5,
-  spaceBetween: 31,
-  cssMode: true,
+    slidesPerView: 5,
+    spaceBetween: 31,
+    cssMode: true,
 
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 30,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      461: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      490: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 48,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 36,
+      },
+      1440: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
     },
-    461: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+    height: 298,
+    loop: false,
+    watchOverflow: true,
+    navigation: {
+      nextEl: '.unreleased__slider-button--next',
+      prevEl: '.unreleased__slider-button--prev',
     },
-    490: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    576: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    // when window width is >= 768px
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 50,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 50,
-    },
-    992: {
-      slidesPerView: 3,
-      spaceBetween: 48,
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 36,
-    },
-    1440: {
-      slidesPerView: 5,
-      spaceBetween: 30,
-    },
-  },
-  height: 298,
-  loop: false,
-  watchOverflow: true,
-  // autoHaight: true,
-  // Navigation arrows
-  navigation: {
-    nextEl: '.unreleased__slider-button--next',
-    prevEl: '.unreleased__slider-button--prev',
-  },
-	// Переключение слайдера клавиатурой
-	keyboard: {
-    enabled: true,
-		onlyInViewport: false,
-  },
-});
-
-// Главное видео
-$(".video-play-main").on("click", function onYouTubeIframeAPIReady() {
-  player = new YT.Player("main-player", {
-    videoId: "F8MN0o6RS9o",
-    width: '100%',
-    height: '100%',
-    events: {
-      onReady: videoPlay,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
     },
   });
-});
-function videoPlay(event) {
-  event.target.playVideo();
-  event.target.setVolume(10);
-}
 
-// Видео 1
-$(".video-play-2").on("click", function onYouTubeIframeAPIReady() {
-  player = new YT.Player("video-two", {
-    videoId: "I-zPNQYHSvU",
-    width: '100%',
-    height: '100%',
-    events: {
-      onReady: videoPlay,
-    },
+  // Main Video
+  $(".video-play-main").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("main-player", {
+      videoId: "F8MN0o6RS9o",
+      width: '100%',
+      height: '100%',
+      events: {
+        onReady: videoPlay,
+      },
+    });
   });
-});
+  function videoPlay(event) {
+    event.target.playVideo();
+    event.target.setVolume(10);
+  }
 
-// Видео 2
-$(".video-play-3").on("click", function onYouTubeIframeAPIReady() {
-  player = new YT.Player("video-three", {
-    videoId: "6vnxzfejWN4",
-    width: '100%',
-    height: '100%',
-    events: {
-      onReady: videoPlay,
-    },
+  // Video 2
+  $(".video-play-2").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("video-two", {
+      videoId: "I-zPNQYHSvU",
+      width: '100%',
+      height: '100%',
+      events: {
+        onReady: videoPlay,
+      },
+    });
   });
-});
 
-// Видео 3
-$(".video-play-4").on("click", function onYouTubeIframeAPIReady() {
-  player = new YT.Player("video-four", {
-    videoId: "vd205Q_EE18",
-    width: '100%',
-    height: '100%',
-    events: {
-      onReady: videoPlay,
-    },
+  // Video 3
+  $(".video-play-3").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("video-three", {
+      videoId: "6vnxzfejWN4",
+      width: '100%',
+      height: '100%',
+      events: {
+        onReady: videoPlay,
+      },
+    });
   });
-});
-// ---------- Modal Window -----------
+
+  // Video 4
+  $(".video-play-4").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("video-four", {
+      videoId: "vd205Q_EE18",
+      width: '100%',
+      height: '100%',
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+  //  Modal Window
 
   var modalButton = $('[data-toggle=modal]');
   var closeModalButton = $('.modal__close');
@@ -210,8 +228,8 @@ $(".video-play-4").on("click", function onYouTubeIframeAPIReady() {
       modalDialog.removeClass('modal__dialog--visible');
       modalOverlay.removeClass('modal__overlay--visible');
       $('body').removeClass('hold');
-  };
-});
+    };
+  });
 
   $('.modal__dialog').on('click', function(event) {
     event.stopPropagation();
@@ -229,7 +247,7 @@ $(".video-play-4").on("click", function onYouTubeIframeAPIReady() {
     "Email format: name@domain.com"
   );
 
-$(".form").each(function () {
+  $(".form").each(function () {
 		$(this).validate({
 			errorClass: "invalid",
             rules: {
@@ -253,8 +271,8 @@ $(".form").each(function () {
 			},
 		});
 	});
-$(document).ready(function () {
   $(".input-phone").mask("+7 (000) 000-00-00");
+  $(document).ready(function () {
 
   function trackScroll() {
     var scrolled = window.pageYOffset;

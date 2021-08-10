@@ -13,6 +13,8 @@ body {
   font-weight: 400;
   color: #183b56;
   margin: 0;
+  position: static;
+  overflow-y: auto;
 }
 
 img {
@@ -77,8 +79,7 @@ a {
 }
 
 .hold {
-  overflow: hidden;
-  padding-right: 15px;
+  overflow-y: clip;
 }
 
 #recommend, #books, #blog {
@@ -720,11 +721,7 @@ template {
   fill: #959ead;
 }
 
-.recommend .button-like:hover {
-  fill: #faad13;
-}
-
-.recommend .button-like:active {
+.recommend .button-like--active {
   fill: red;
 }
 
