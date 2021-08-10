@@ -871,16 +871,29 @@ template {
 }
 
 .unreleased {
-  padding: 62px 0 80px;
   background-color: #183b56;
+  padding-top: 62px;
+  padding-bottom: 78px;
 }
 
-.unreleased__wrapper {
+.unreleased-container {
+  margin-top: 60px;
+}
+
+.unreleased-wrap {
   position: relative;
 }
 
+.unreleased-slide {
+  width: 204px;
+  margin-right: 30px;
+}
+
+.unreleased-slide--last {
+  margin-right: 0px;
+}
+
 .unreleased__title {
-  margin-bottom: 60px;
   font-family: Roboto Condensed;
   font-style: normal;
   font-weight: bold;
@@ -890,49 +903,35 @@ template {
   color: #ffffff;
 }
 
-.unreleased__slider-item {
-  max-width: 204px;
-  height: auto;
+.unreleased__img {
+  width: 100%;
+  height: 298px;
+  object-fit: cover;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.unreleased__slider-button {
-  margin-top: -5px;
-  width: 54px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.unreleased-button {
+  padding: 0;
   position: absolute;
-  z-index: 99;
-  top: 0;
+  top: -4px;
   right: 0;
-  background-image: url(../img/arrow-active.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 2px solid #ffffff;
+  border: none;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: centers;
+  background-color: transparent;
+  z-index: 90;
 }
 
-.unreleased__slider-button--prev {
-  transform: rotate(180deg);
+.unreleased-button--prev {
   right: 78px;
 }
 
-.unreleased__slider-button:disabled {
-  border-color: #5a7184;
-  background-image: url(../img/arrow-unactive.svg);
+.unreleased-button.swiper-button-disabled {
   cursor: default;
-  border: 2px solid #5A7184;
-}
-
-.unreleased-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  box-shadow: none;
+  opacity: 0.5;
 }
 
 .author {
@@ -1678,17 +1677,11 @@ template {
     font-size: 18px;
     line-height: 1.6;
   }
-  .story-wrapper {
-    width: 900px;
+  .unreleased-slide {
+    margin-right: 48px;
   }
-  .story__video-one {
-    width: 280px;
-  }
-  .story__video-two {
-    width: 280px;
-  }
-  .story__video-three {
-    width: 280px;
+  .unreleased-slide--last {
+    margin-right: 0px;
   }
   .publishers__wrapper {
     width: auto;
@@ -1853,6 +1846,12 @@ template {
     margin-left: 9px;
     align-items: start;
     text-align: left;
+  }
+  .unreleased-slide {
+    margin-right: 54px;
+  }
+  .unreleased-slide--last {
+    margin-right: 0px;
   }
   .author {
     padding: 50px 0 70px;
@@ -2050,9 +2049,37 @@ template {
   .sections__slider-button {
     top: 50%;
   }
-  .unreleased__slider {
-    margin: 0 auto;
-    width: 480px;
+  .unreleased {
+    padding-top: 48px;
+    padding-bottom: 133px;
+  }
+  .unreleased-slide {
+    width: 100%;
+    margin-right: 0px;
+    text-align: center;
+  }
+  .unreleased__title {
+    text-align: center;
+  }
+  .unreleased__img {
+    width: 300px;
+    height: 434px;
+  }
+  .unreleased-button {
+    top: auto;
+    bottom: -88px;
+  }
+  .unreleased-button--next {
+    transform: translateX(100%);
+    right: 47%;
+  }
+  .unreleased-button--prev {
+    transform: translateX(-100%);
+    left: 47%;
+  }
+  .unreleased-button__svg {
+    width: 48px;
+    height: 48px;
   }
   .author__head {
     margin-top: 0;
@@ -2220,41 +2247,16 @@ template {
     height: 36px;
     margin-bottom: 16px;
   }
-  .unreleased {
-    padding: 49px 0 50px;
-  }
-  .unreleased__wrapper {
-    margin-bottom: 87px;
+  .unreleased-container {
+    margin-top: 41px;
   }
   .unreleased__title {
-    margin-bottom: 41px;
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: bold;
     font-size: 28px;
     line-height: 36px;
-    text-align: center;
   }
-  .unreleased__slider {
-    width: 440px;
-    margin: 0 auto;
-  }
-  .unreleased__slider-button {
-    top: auto;
-    bottom: -89px;
-    width: 48px;
-    height: 48px;
-    background-image: url(../img/button-active-s.svg);
-  }
-  .unreleased__slider-button--prev {
-    right: 53%;
-    transform: rotate(180deg);
-  }
-  .unreleased__slider-button--prev:disabled {
-    transform: rotate(180deg);
-  }
-  .unreleased__slider-button--next {
-    left: 53%;
+  .unreleased__img {
+    width: 206px;
+    height: 300px;
   }
   .author__container {
     width: 94%;

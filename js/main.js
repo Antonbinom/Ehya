@@ -85,65 +85,26 @@
       nextEl: '.sections__slider-button--next',
       prevEl: '.sections__slider-button--prev',
     },
-    // Переключение слайдера клавиатурой
+    // Keyboard control
     keyboard: {
       enabled: true,
       onlyInViewport: false,
     },
   });
-  const unreleasedSlider = new Swiper('.unreleased__slider', {
-    slidesPerView: 5,
-    spaceBetween: 31,
-    cssMode: true,
 
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-      },
-      461: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      490: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 50,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 50,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 48,
-      },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 36,
-      },
-      1440: {
-        slidesPerView: 5,
-        spaceBetween: 30,
-      },
-    },
-    height: 298,
-    loop: false,
-    watchOverflow: true,
+   // Slider 2
+  const swiperUnreleased = new Swiper(".unreleased-container", {
+    slidesPerView: "auto",
+
+    // Navigation arrows
     navigation: {
-      nextEl: '.unreleased__slider-button--next',
-      prevEl: '.unreleased__slider-button--prev',
+      nextEl: ".unreleased-button--next",
+      prevEl: ".unreleased-button--prev",
     },
+
+    // Keyboard control
     keyboard: {
       enabled: true,
-      onlyInViewport: false,
     },
   });
 
