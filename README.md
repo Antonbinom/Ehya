@@ -27,4 +27,4 @@
 - PHP Mailer
 - Pixel Perfect
 
-## <a href="https://antonbinom.github.io/web-start-easy">Ссылка</a>
+## <a href="https://antonbinom.github.io/Ehya/">Ссылка</a>
